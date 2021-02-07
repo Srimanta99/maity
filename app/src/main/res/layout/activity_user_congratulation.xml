@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserCongratulationAcitivity.UserCongratulationActivity"
+    android:background="@drawable/onlybg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/thankubg"
+                android:layout_marginBottom="@dimen/_20sdp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/congratulation"
+                    android:layout_marginTop="@dimen/_40sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Congratulation"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_30sdp"
+                    android:fontFamily="@font/productsansregular"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thank you for place\nthe order.\nOur service team\nwill contact you."
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_22sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/productsansregular"
+                    android:paddingTop="@dimen/_10sdp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <RelativeLayout
+                    android:id="@+id/home_btnid"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/homebtn"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+    </LinearLayout>
+
+</LinearLayout>

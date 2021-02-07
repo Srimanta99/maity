@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/maityspositiveliving_icon_layout"
+            ></include>
+
+        <RelativeLayout
+            android:id="@+id/back_icon"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/back"
+            android:layout_marginTop="@dimen/_30sdp"
+            >
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

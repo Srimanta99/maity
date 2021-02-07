@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.Fragment.UserUpdateProfileFragment"
+    android:orientation="vertical"
+    android:background="@drawable/skybg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/text_color_light_blak"
+            android:layout_marginBottom="@dimen/_4sdp"
+            >
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etn_nameid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="text"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="@font/productsansregular"
+
+            >
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/text_color_light_blak"
+            android:layout_marginBottom="@dimen/_4sdp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etn_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="@font/productsansregular"
+
+            >
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/text_color_light_blak"
+            android:layout_marginBottom="@dimen/_4sdp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etn_mobnoid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="number"
+            android:textSize="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:fontFamily="@font/productsansregular"
+
+            >
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE PASSWORD"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/productsansregular"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/text_color_dark_blue">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Password"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/text_color_light_blak"
+            android:layout_marginBottom="@dimen/_4sdp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etn_currentpasswordid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textPassword"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:fontFamily="@font/productsansregular"
+
+            >
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Password"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/text_color_light_blak"
+            android:layout_marginBottom="@dimen/_4sdp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etn_newpasswordid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textPassword"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:fontFamily="@font/productsansregular"
+
+            >
+        </EditText>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:fontFamily="@font/productsansregular"
+            android:textColor="@color/text_color_light_blak"
+            android:layout_marginBottom="@dimen/_4sdp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/etn_confirmpasswordid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="textPassword"
+            android:textSize="@dimen/_12sdp"
+            android:paddingLeft="@dimen/_20sdp"
+            android:fontFamily="@font/productsansregular"
+
+            >
+        </EditText>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/submit"
+            >
+
+        </ImageView>
+    </RelativeLayout>
+</LinearLayout>

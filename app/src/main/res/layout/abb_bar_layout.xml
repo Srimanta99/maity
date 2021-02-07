@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onlybg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/dashboard_tvid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/DASHBOARD"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/productsansbold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_18sdp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_icon"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/menubgbtn"
+            android:layout_marginTop="@dimen/_30sdp"
+            >
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></FrameLayout>
+
+</LinearLayout>

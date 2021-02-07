@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserStepTwoRegistrationActivity.UserStepTwoRegistrationActivity"
+    android:orientation="vertical"
+    android:background="@drawable/onlybg">
+
+    <include
+        layout="@layout/maityicon_withbackbtn_layout"
+        ></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your registration"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgshape"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluecapsulshapebutton"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/steptworegister"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    >
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DOB"
+                    android:fontFamily="@font/productsansregular"
+                    android:textColor="@color/text_color_blue"
+                    android:paddingLeft="@dimen/_15sdp">
+
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/select_calender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/asscolor_round"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView
+                           android:id="@+id/dob_tvid"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:inputType="text"
+                            android:fontFamily="@font/productsansregular"
+                            android:padding="@dimen/_10sdp"
+                            android:background="@android:color/transparent"
+
+
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/calender"
+                        android:padding="@dimen/_6sdp">
+
+                    </ImageView>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Gender"
+                    android:textColor="@color/text_color_blue"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:fontFamily="@font/productsansregular"
+                    >
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_50sdp"
+                    android:paddingRight="@dimen/_15sdp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9">
+                        <ImageView
+                            android:id="@+id/male_ivid"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/circle">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Male"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/productsansregular"
+                            android:textSize="@dimen/_18sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1">
+                        <ImageView
+                            android:id="@+id/female_ivid"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/circle">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Female"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/productsansregular"
+
+                            android:textSize="@dimen/_18sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9">
+
+                        <ImageView
+                            android:id="@+id/other_ivid"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/circle">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Other"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_18sdp"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:fontFamily="@font/productsansregular"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <!-- <RadioGroup
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/radioGroup"
+                     android:background="@drawable/custom_rg"
+                     android:orientation="horizontal">
+
+                     <RadioButton
+                         android:id="@+id/radioMale"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="   Male"
+                         android:checked="false"
+
+                         android:textColor="@color/white"
+                         android:textSize="20dp" />
+
+                     <RadioButton
+                         android:id="@+id/radioFemale"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="   Female"
+                         android:checked="false"
+
+                         android:textColor="@color/white"
+                         android:textSize="20dp" />
+
+                     <RadioButton
+                         android:id="@+id/radioother"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Other"
+                         android:checked="false"
+                         android:textColor="@drawable/custom_rb_text"
+                         android:background="@drawable/circle"
+                         android:button="@null"
+                         android:textSize="20dp" />
+                 </RadioGroup>-->
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nextid"
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/nexttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_218sdp"
+                >
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserEnterMobileNumberActivity.UserMobileNumberActivity"
+    android:background="@drawable/onlybg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/maityspositiveliving_icon_layout"
+        ></include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgshape"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluecapsulshapebutton"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="@string/Entermobile"
+                    android:fontFamily="@font/productsansregular"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                </TextView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_40sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/spinnerstyle"
+                        android:layout_marginRight="@dimen/_8sdp">
+
+
+                        <Spinner
+                            android:id="@+id/spinnerid"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            >
+                        </Spinner>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/asscolor_round">
+
+                        <EditText
+                            android:id="@+id/etphnoid"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@android:color/transparent"
+                            android:textStyle="normal"
+                            android:textSize="@dimen/_10sdp"
+                            android:imeOptions="actionDone"
+                            android:gravity="center|left"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/_9sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:fontFamily="@font/productsansregular"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:lines="1"
+                            >
+
+                        </EditText>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nextid"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/nexttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_110sdp"
+                >
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

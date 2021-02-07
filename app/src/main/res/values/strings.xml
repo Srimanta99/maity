@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Maity\'s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="DASHBOARD">DASHBOARD</string>
+    <string name="Pleaseselect">Please select your purpose</string>
+    <string name="Name">Name :</string>
+    <string name="name">Name</string>
+    <string name="Email">Email ID</string>
+    <string name="Selectstate">Select state</string>
+    <string name="Selectcity">Select city</string>
+    <string name="Enteraddress">Enter your address</string>
+    <string name="EnterPIN">Enter PIN</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="Gender">Gender</string>
+    <string name="Contact">Contact Number :</string>
+    <string name="Address">Address :</string>
+    <string name="Note">Note</string>
+    <string name="Sqft">Sqft. Area</string>
+    <string name="Disinfectant">Disinfectant</string>
+    <string name="disinfectant">Disinfectant : </string>
+    <string name="Deep">Deep Cleaning</string>
+    <string name="Normal">Normal Cleaning</string>
+    <string name="Rewared">Rewared</string>
+    <string name="Not">Not Rewarded</string>
+    <string name="CleaningCategory">Cleaning Category : </string>
+    <string name="Square">Square Feet : </string>
+    <string name="PAYMENTDETAILS">PAYMENT DETAILS</string>
+    <string name="Service">Service Charge</string>
+    <string name="Total">Total Amount</string>
+    <string name="Congratulation">Congratulation !</string>
+    <string name="GroceryDelivery">Grocery Delivery</string>
+    <string name="Cleaning">Cleaning</string>
+    <string name="Plumbing">Plumbing</string>
+    <string name="Nest">Nest Care Dishes</string>
+    <string name="Repairing">Repairing</string>
+    <string name="Laundry">Laundry</string>
+    <string name="PestControl">Pest Control</string>
+    <string name="Entermobile">Enter mobile number</string>
+    <string name="BHIM">BHIM UPI</string>
+    <string name="DEBITCARD">DEBIT CARD</string>
+    <string name="Verifyingmobile">Verifying mobile number</string>
+    <string name="HouseHold">House Hold</string>
+    <string name="Spiritual">Spiritual</string>
+    <string name="CREDITCARD">CREDIT CARD</string>
+    <string name="StateBank">State Bank of India - 2563</string>
+    <string name="AxisBank">Axis Bank - 0652</string>
+    <string name="useanother">Use another BHIM UPI ID</string>
+    <string name="WalletBalance">Wallet Balance</string>
+    <string name="Thankyou">Thank you for place\nthe order.\nOur service team\nwill contact you.</string>
+
+    <string name="cleaning_name">Lorem ipsum is simply dummy text of the printing and typesetting
+        industry.Lorem ipsum has been the industry standard dummy textever since the 1500s,when an unknown
+        printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+</resources>

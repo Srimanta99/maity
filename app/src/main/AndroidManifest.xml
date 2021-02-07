@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.maityspositiveliving">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".utils.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaitysPositiveLiving">
+        <activity android:name=".screen.UserCleaningPlaceOrderActivity.UserCleaningPlaceOrderActivity"></activity>
+        <activity android:name=".screen.UserCongratulationAcitivity.UserCongratulationActivity" />
+        <activity android:name=".screen.UserHouseHoldActivity.UserHouseHoldActivity" />
+        <activity android:name=".screen.UserDashboardActivity.UserDashboardActivity">
+
+        </activity>
+        <activity android:name=".screen.UserThankYouActivity.UserThankYouActivity" />
+        <activity android:name=".screen.Splash.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".screen.main.MainActivity" />
+        <activity android:name=".screen.UserStepThreeRegistrationActivity.UserStepThreeRegistrationActivity" />
+        <activity android:name=".screen.UserStepTwoRegistrationActivity.UserStepTwoRegistrationActivity" />
+        <activity android:name=".screen.UserStepOneRegistrationActivity.UserStepOneRegistrationActivity" />
+        <activity android:name=".screen.UserVerifyMobileNumberActivity.UserVerifyMobileNumberActivity" />
+        <activity android:name=".screen.UserEnterMobileNumberActivity.UserMobileNumberActivity" />
+        <activity android:name=".screen.UserCleaningActivity.UserCleaningActivity" />
+    </application>
+
+</manifest>

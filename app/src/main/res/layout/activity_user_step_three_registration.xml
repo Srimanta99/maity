@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserStepThreeRegistrationActivity.UserStepThreeRegistrationActivity"
+    android:orientation="vertical"
+    android:background="@drawable/onlybg">
+
+    <include
+        layout="@layout/maityicon_withbackbtn_layout"
+        ></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your registration"
+        android:textColor="@color/white"
+        android:fontFamily="@font/productsansregular"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgshape"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluecapsulshapebutton"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/fullregistration"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    >
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Selectstate"
+                        android:fontFamily="@font/productsansregular"
+                        android:textColor="@color/text_color_blue"
+                       >
+
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:fontFamily="@font/productsansregular"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <Spinner
+                                android:id="@+id/select_state_spinnerid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent">
+
+                            </Spinner>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arrow"
+                            android:padding="@dimen/_10sdp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Selectcity"
+                        android:fontFamily="@font/productsansregular"
+                        android:textColor="@color/text_color_blue"
+                       >
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_4sdp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                            <Spinner
+                                android:id="@+id/select_city_spinnerid"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent">
+
+                            </Spinner>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/arrow"
+                            android:padding="@dimen/_10sdp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Enteraddress"
+                        android:textColor="@color/text_color_blue"
+                        android:fontFamily="@font/productsansregular"
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/address_etnid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/productsansregular"
+
+                        >
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/EnterPIN"
+                        android:textColor="@color/text_color_blue"
+                        android:fontFamily="@font/productsansregular"
+                        >
+                    </TextView>
+
+
+
+                    <EditText
+                        android:id="@+id/pin_etnid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:inputType="number"
+                        android:layout_marginBottom="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/productsansregular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        >
+                    </EditText>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nextid"
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/nexttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_335sdp"
+                >
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserStepOneRegistrationActivity.UserStepOneRegistrationActivity"
+    android:orientation="vertical"
+    android:background="@drawable/onlybg">
+
+    <include
+        layout="@layout/maityspositiveliving_icon_layout"
+        ></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete your registration"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:fontFamily="@font/productsansregular"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgshape"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluecapsulshapebutton"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:src="@drawable/fulltext"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    >
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:fontFamily="@font/productsansregular"
+                        android:textColor="@color/text_color_blue">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etn_nameid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:inputType="text"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/productsansregular"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        >
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Email"
+                        android:fontFamily="@font/productsansregular"
+                        android:textColor="@color/text_color_blue"
+                        >
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/etn_emailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:inputType="textEmailAddress"
+                        android:textSize="@dimen/_12sdp"
+                        android:fontFamily="@font/productsansregular"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+
+                        android:layout_marginBottom="@dimen/_40sdp"
+                        >
+                    </EditText>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/nextid"
+                android:layout_width="@dimen/_105sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/nexttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_218sdp"
+                >
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
