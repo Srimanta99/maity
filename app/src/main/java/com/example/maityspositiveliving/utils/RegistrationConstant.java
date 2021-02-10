@@ -11,6 +11,8 @@ public class RegistrationConstant {
     public static String GENDER="";
     public static int STATE=0;
     public static int CITY=0;
+    public static String CITY_NAME="";
+
     public static String ADDRESS="";
     public static String PIN="";
 }

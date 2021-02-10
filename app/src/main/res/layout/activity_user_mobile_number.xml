@@ -60,23 +60,43 @@
                     android:orientation="horizontal"
                     android:paddingRight="@dimen/_15sdp"
                     android:paddingLeft="@dimen/_15sdp"
-                    android:layout_marginBottom="@dimen/_40sdp">
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    >
 
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.4"
-                        android:background="@drawable/spinnerstyle"
-                        android:layout_marginRight="@dimen/_8sdp">
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:orientation="horizontal"
+                       >
 
 
                         <Spinner
-                            android:id="@+id/spinnerid"
-                            android:layout_width="match_parent"
+                            android:id="@+id/spinner_country_code"
+                            android:layout_width="wrap_content"
                             android:layout_height="@dimen/_40sdp"
+                            android:background="@android:color/transparent"
+                            android:popupBackground="@drawable/blue_outline_white_background"
                             >
                         </Spinner>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:gravity="right">
+                            <ImageView
+                                android:id="@+id/img_state"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/arrow"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                >
+
+                            </ImageView>
+                        </LinearLayout>
 
 
 
@@ -90,7 +110,7 @@
                         android:background="@drawable/asscolor_round">
 
                         <EditText
-                            android:id="@+id/etphnoid"
+                            android:id="@+id/etn_mobno"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_40sdp"
                             android:background="@android:color/transparent"

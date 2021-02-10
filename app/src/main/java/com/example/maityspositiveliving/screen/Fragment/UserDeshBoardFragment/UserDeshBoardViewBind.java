@@ -3,6 +3,8 @@ package com.example.maityspositiveliving.screen.Fragment.UserDeshBoardFragment;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.maityspositiveliving.R;
 import com.rts.commonutils_2_0.deviceinfo.DeviceResolution;
 
@@ -11,7 +13,7 @@ public class UserDeshBoardViewBind extends DeviceResolution {
     View view;
 
     LinearLayout household_lvid,lvidteachers,classlvid,lvidholidaylist,lvstudentsfeesid,lvidFeedbacklist,lvidtoday,lvidhometask;
-
+ RecyclerView rv_parentcategory;
 
     public UserDeshBoardViewBind( UserDeshBoardFragment userDeshBoardFragment, View view) {
         super(userDeshBoardFragment.getActivity());
@@ -29,13 +31,7 @@ public class UserDeshBoardViewBind extends DeviceResolution {
 
     // for findview
     private void initviewBind() {
-        household_lvid=view.findViewById(R.id.household_lvid);
-       /* lvidteachers=view.findViewById(R.id.lvidteachers);
-        classlvid=view.findViewById(R.id.classlvid);
-        lvidholidaylist=view.findViewById(R.id.lvidholidaylist);
-        lvstudentsfeesid=view.findViewById(R.id.lvstudentsfeesid);
-        lvidhometask=view.findViewById(R.id.lvidhometask);
-        lvidFeedbacklist=view.findViewById(R.id.lvidFeedbacklist);
-        lvidtoday=view.findViewById(R.id.lvidtoday);*/
+      //  household_lvid=view.findViewById(R.id.household_lvid);
+        rv_parentcategory=view.findViewById(R.id.rv_parentcategory);
     }
 }

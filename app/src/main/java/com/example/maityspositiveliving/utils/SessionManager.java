@@ -103,6 +103,17 @@ public class SessionManager {
         return preferences.getString("DOB","");
     }
 
+
+
+    public static void setcustomar_countryvalue(String customar_country){
+        editor.putString("customar_country", customar_country);
+        editor.apply();
+    }
+    public  static String getcustomar_countryvalue(){
+        return preferences.getString("customar_country","");
+    }
+
+
     public static void setAddressvalue(String email){
         editor.putString("Address", email);
         editor.apply();
@@ -128,12 +139,30 @@ public class SessionManager {
     }
 
 
-    public static void setSelectCityvalue(int i){
-        editor.putInt("SelectCity", i);
+    public static void setSelectCityvalue(String i){
+        editor.putString("SelectCity", i);
         editor.apply();
     }
-    public  static int getSelectCityvalue(){
-        return preferences.getInt("SelectCity",0);
+    public  static String getSelectCityvalue(){
+        return preferences.getString("SelectCity","");
+    }
+
+
+    public static void setPassword(String i){
+        editor.putString("Password", i);
+        editor.apply();
+    }
+    public  static String getPassword(){
+        return preferences.getString("Password","");
+    }
+
+
+    public static void setcPassword(String i){
+        editor.putString("cPassword", i);
+        editor.apply();
+    }
+    public  static String getcPassword(){
+        return preferences.getString("cPassword","");
     }
 
 

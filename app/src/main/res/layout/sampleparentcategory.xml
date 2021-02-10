@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_15sdp">
+
+    <LinearLayout
+        android:id="@+id/lv_id"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_weight="1"
+        android:background="@drawable/shapebg"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/_5sdp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_75sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_70sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:src="@drawable/home">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_category_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/HouseHold"
+            android:paddingLeft="@dimen/_10sdp"
+            android:fontFamily="@font/productsansregular"
+            android:gravity="top"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -13,7 +13,7 @@ public class UserStepTwoRegistrationOnClick implements View.OnClickListener {
     UserStepTwoRegistrationViewBind userStepTwoRegistrationViewBind;
 
 
-    String Gender="";
+  //  String Gender="";
 
     public UserStepTwoRegistrationOnClick(UserStepTwoRegistrationActivity userStepTwoRegistrationActivity, UserStepTwoRegistrationViewBind userStepTwoRegistrationViewBind) {
         this.userStepTwoRegistrationActivity = userStepTwoRegistrationActivity;
@@ -50,7 +50,7 @@ public class UserStepTwoRegistrationOnClick implements View.OnClickListener {
             break;
             case R.id.back_icon: {
                 RegistrationConstant.DOB=userStepTwoRegistrationActivity.DOB;
-                RegistrationConstant.GENDER=Gender;
+                RegistrationConstant.GENDER=userStepTwoRegistrationActivity.Gender;
                 userStepTwoRegistrationActivity.finish();
             }
             break;
@@ -66,7 +66,7 @@ public class UserStepTwoRegistrationOnClick implements View.OnClickListener {
                 userStepTwoRegistrationViewBind.female_ivid.setImageResource(R.drawable.circle);
                 userStepTwoRegistrationViewBind.other_ivid.setImageResource(R.drawable.circle);
 
-                Gender="Male";
+                userStepTwoRegistrationActivity.Gender="Male";
 
                 //   SessionManager.setGendervalue(Gender);
 
@@ -76,7 +76,7 @@ public class UserStepTwoRegistrationOnClick implements View.OnClickListener {
                 userStepTwoRegistrationViewBind.female_ivid.setImageResource(R.drawable.red_circle);
                 userStepTwoRegistrationViewBind.male_ivid.setImageResource(R.drawable.circle);
                 userStepTwoRegistrationViewBind.other_ivid.setImageResource(R.drawable.circle);
-                Gender="Female";
+                userStepTwoRegistrationActivity.Gender="Female";
                 //   SessionManager.setGendervalue(Gender);
 
             }
@@ -86,14 +86,11 @@ public class UserStepTwoRegistrationOnClick implements View.OnClickListener {
                 userStepTwoRegistrationViewBind.other_ivid.setImageResource(R.drawable.red_circle);
                 userStepTwoRegistrationViewBind.female_ivid.setImageResource(R.drawable.circle);
                 userStepTwoRegistrationViewBind.male_ivid.setImageResource(R.drawable.circle);
-                Gender="Other";
+                userStepTwoRegistrationActivity.Gender="Other";
                 //   SessionManager.setGendervalue(Gender);
 
             }
             break;
-
-
-
         }
 
 
@@ -102,7 +99,7 @@ public class UserStepTwoRegistrationOnClick implements View.OnClickListener {
     void finis(){
 
         RegistrationConstant.DOB=userStepTwoRegistrationActivity.DOB;
-        RegistrationConstant.GENDER=Gender;
+        RegistrationConstant.GENDER=userStepTwoRegistrationActivity.Gender;
         userStepTwoRegistrationActivity.finish();
     }
 }

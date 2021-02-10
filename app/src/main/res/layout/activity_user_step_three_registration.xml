@@ -89,12 +89,14 @@
                                 android:id="@+id/select_state_spinnerid"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:popupBackground="@drawable/blue_outline_white_background"
                                 android:background="@android:color/transparent">
 
                             </Spinner>
                         </LinearLayout>
 
                         <ImageView
+                            android:id="@+id/img_state"
                             android:layout_width="@dimen/_40sdp"
                             android:layout_height="match_parent"
                             android:src="@drawable/arrow"

@@ -17,8 +17,6 @@ public class UserHouseHoldActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_user_house_hold);
-
         View view= LayoutInflater.from(this).inflate(R.layout.activity_user_house_hold,null);
         setContentView(view);
         userHouseHoldViewBind= new UserHouseHoldViewBind(this,view);

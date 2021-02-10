@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.example.maityspositiveliving.R;
 import com.example.maityspositiveliving.screen.UserVerifyMobileNumberActivity.UserVerifyMobileNumberActivity;
+import com.example.maityspositiveliving.utils.RegistrationConstant;
 
 public class UserMobileNumberOnClick implements View.OnClickListener{
     UserMobileNumberActivity userMobileNumberActivity;
@@ -24,6 +25,7 @@ public class UserMobileNumberOnClick implements View.OnClickListener{
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.nextid:{
+                RegistrationConstant.MOBILE_NUMBER=userMobileNumberViewBind.etn_mobno.getText().toString();
                 Intent mainIntent = new Intent(userMobileNumberActivity, UserVerifyMobileNumberActivity.class);
                 userMobileNumberActivity.startActivity(mainIntent);
                // userMobileNumberActivity.finish();
