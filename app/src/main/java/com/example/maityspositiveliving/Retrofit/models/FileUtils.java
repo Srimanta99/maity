@@ -1,4 +1,4 @@
-package com.example.maityspositiveliving.models;
+package com.example.maityspositiveliving.Retrofit.models;
 
 import android.content.ContentUris;
 import android.content.Context;

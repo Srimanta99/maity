@@ -87,6 +87,8 @@
                             android:inputType="text"
                             android:fontFamily="@font/productsansregular"
                             android:padding="@dimen/_10sdp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textColor="@color/text_color_light_blak"
                             android:background="@android:color/transparent"
 
 

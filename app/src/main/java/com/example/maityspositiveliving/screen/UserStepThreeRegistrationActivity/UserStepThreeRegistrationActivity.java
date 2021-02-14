@@ -18,10 +18,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.maityspositiveliving.POJO.StateList;
 import com.example.maityspositiveliving.R;
-import com.example.maityspositiveliving.interfaces.OnCallBackListner;
-import com.example.maityspositiveliving.models.ApiRequest;
+
+import com.example.maityspositiveliving.Retrofit.interfaces.OnCallBackListner;
+import com.example.maityspositiveliving.Retrofit.models.ApiRequest;
 import com.example.maityspositiveliving.screen.UserThankYouActivity.UserThankYouActivity;
 import com.example.maityspositiveliving.utils.ApplicationConstant;
+import com.example.maityspositiveliving.utils.MyToast;
 import com.example.maityspositiveliving.utils.RegistrationConstant;
 import com.example.maityspositiveliving.utils.SessionManager;
 
@@ -75,8 +77,20 @@ public class UserStepThreeRegistrationActivity extends AppCompatActivity impleme
         ArrayList<String> Sp_list= new ArrayList<>();
         Sp_list.clear();
         Sp_list.add("Select City");
-        Sp_list.add("Monthly");
         Sp_list.add("Kolkata");
+        Sp_list.add("Asansol");
+        Sp_list.add("Siliguri");
+        Sp_list.add("Durgapur");
+        Sp_list.add("Bardhaman");
+        Sp_list.add("English Bazar");
+        Sp_list.add("Habra");
+        Sp_list.add("Ranahat");
+        Sp_list.add("Bankura");
+        Sp_list.add("Darjeeling");
+        Sp_list.add("Bangaon");
+        Sp_list.add("Cooch Behar");
+
+
         SelectCityAdapter adapter=new SelectCityAdapter( UserStepThreeRegistrationActivity.this,Sp_list);
         userStepThreeRegistrationViewBind.select_city_spinnerid.setAdapter(adapter);
 
@@ -153,7 +167,6 @@ public class UserStepThreeRegistrationActivity extends AppCompatActivity impleme
 
 
       else   if (tag.equalsIgnoreCase("Register")){
-            Toast.makeText(this, ""+body, Toast.LENGTH_SHORT).show();
             try {
                 JSONObject jsonObject=new JSONObject(body);
                 JSONObject jsonObject1=jsonObject.getJSONObject("messages");
@@ -170,7 +183,8 @@ public class UserStepThreeRegistrationActivity extends AppCompatActivity impleme
                 SessionManager.setPinNovalue(RegistrationConstant.PIN);
                 SessionManager.setPassword("12345");
                 SessionManager.setcPassword("12345");
-                Toast.makeText(this, ""+jsonObject1.getString("success"), Toast.LENGTH_SHORT).show();
+                MyToast.show(UserStepThreeRegistrationActivity.this,""+jsonObject1.getString("success"),true);
+
 
                 Intent mainIntent = new Intent(UserStepThreeRegistrationActivity.this, UserThankYouActivity.class).addFlags(
                         Intent.FLAG_ACTIVITY_CLEAR_TASK |

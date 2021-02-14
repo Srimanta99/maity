@@ -7,7 +7,6 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,8 +17,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.maityspositiveliving.POJO.ParentcategoryList;
 import com.example.maityspositiveliving.R;
-import com.example.maityspositiveliving.interfaces.OnCallBackListner;
-import com.example.maityspositiveliving.models.ApiRequest;
+
+import com.example.maityspositiveliving.Retrofit.interfaces.OnCallBackListner;
+import com.example.maityspositiveliving.Retrofit.models.ApiRequest;
 import com.example.maityspositiveliving.screen.Adapter.ParentcategoryAdapter;
 import com.example.maityspositiveliving.utils.ApplicationConstant;
 
@@ -64,6 +64,7 @@ public class UserDeshBoardFragment extends Fragment implements OnCallBackListner
         apiRequest.callGET(ApplicationConstant.parentcategory_url,"parentcategory");
     }
 
+
     @Override
     public void OnCallBackSuccess(String tag, String body) {
         if (tag.equalsIgnoreCase("parentcategory")){
@@ -101,6 +102,48 @@ public class UserDeshBoardFragment extends Fragment implements OnCallBackListner
             }
 
         }
+
+
+       /* else if (tag.equalsIgnoreCase("subcategory")){
+            try {
+
+                JSONObject jsonObject=new JSONObject(body);
+                JSONArray jsonArray = jsonObject.getJSONArray("table");
+                for (int i = 0; i < jsonArray.length(); i++) {
+
+                    JSONObject jsonObject1 = jsonArray.getJSONObject(i);
+
+                    ParentcategoryList parentcategoryList = new ParentcategoryList(
+                            jsonObject1.getString("id"),
+                            jsonObject1.getString("category_name"),
+                            jsonObject1.getString("category_icon"),
+                            jsonObject1.getString("parent_category"),
+                            jsonObject1.getString("status")
+
+                    );
+                    parentcategoryLists.add(parentcategoryList);
+
+                }
+
+                ParentcategoryAdapter parentcategoryAdapter = new ParentcategoryAdapter(getActivity(), parentcategoryLists, new ParentcategoryInterface() {
+                    @Override
+                    public void pass_subcategory_url(String subcategory_url_withid) {
+                        apiForsubcategory_url(subcategory_url_withid);
+                    }
+                });
+                userDeshBoardViewBind. rv_parentcategory.setAdapter(parentcategoryAdapter);
+
+                GridLayoutManager gridLayoutManager1 = new GridLayoutManager(getActivity(), 2);
+                userDeshBoardViewBind. rv_parentcategory.setLayoutManager(gridLayoutManager1);
+                userDeshBoardViewBind. rv_parentcategory.setItemAnimator(new DefaultItemAnimator());
+                userDeshBoardViewBind. rv_parentcategory.setNestedScrollingEnabled(false);
+                userDeshBoardViewBind. rv_parentcategory.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(1), true));
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        }*/
     }
 
     @Override
@@ -149,6 +192,8 @@ public class UserDeshBoardFragment extends Fragment implements OnCallBackListner
         Resources r = getResources();
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
     }
+
+
 
 
 }

@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.example.maityspositiveliving.R;
 import com.example.maityspositiveliving.screen.UserStepThreeRegistrationActivity.UserStepThreeRegistrationActivity;
+import com.example.maityspositiveliving.utils.MyToast;
 import com.example.maityspositiveliving.utils.RegistrationConstant;
 
 
@@ -43,8 +44,21 @@ public class UserStepTwoRegistrationOnClick implements View.OnClickListener {
                 RegistrationConstant.DOB=userStepTwoRegistrationActivity.DOB;
                 RegistrationConstant.GENDER=userStepTwoRegistrationActivity.Gender;
 
-                Intent mainIntent = new Intent(userStepTwoRegistrationActivity, UserStepThreeRegistrationActivity.class);
-                userStepTwoRegistrationActivity.startActivity(mainIntent);
+
+                if (userStepTwoRegistrationViewBind.dob_tvid.getText().toString().isEmpty()){
+                    MyToast.show(userStepTwoRegistrationActivity,"please Enter Your DOB",true);
+
+                }else if (RegistrationConstant.GENDER.isEmpty()){
+                    MyToast.show(userStepTwoRegistrationActivity,"please Enter Your Gender",true);
+
+                }
+                else {
+                    Intent mainIntent = new Intent(userStepTwoRegistrationActivity, UserStepThreeRegistrationActivity.class);
+                    userStepTwoRegistrationActivity.startActivity(mainIntent);
+                }
+
+               /* Intent mainIntent = new Intent(userStepTwoRegistrationActivity, UserStepThreeRegistrationActivity.class);
+                userStepTwoRegistrationActivity.startActivity(mainIntent);*/
 
             }
             break;

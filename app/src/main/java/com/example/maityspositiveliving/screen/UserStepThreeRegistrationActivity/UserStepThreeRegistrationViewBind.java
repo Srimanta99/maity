@@ -16,7 +16,7 @@ public class UserStepThreeRegistrationViewBind extends DeviceResolution {
     RelativeLayout nextid,back_icon;
     EditText address_etnid,pin_etnid;
     Spinner select_state_spinnerid,select_city_spinnerid;
-    ImageView img_state;
+    ImageView img_state,img_city;
 
     public UserStepThreeRegistrationViewBind(UserStepThreeRegistrationActivity userStepThreeRegistrationActivity, View view) {
         super(userStepThreeRegistrationActivity);
@@ -41,6 +41,7 @@ public class UserStepThreeRegistrationViewBind extends DeviceResolution {
         select_state_spinnerid=view.findViewById(R.id.select_state_spinnerid);
         select_city_spinnerid=view.findViewById(R.id.select_city_spinnerid);
         img_state=view.findViewById(R.id.img_state);
+        img_city=view.findViewById(R.id.img_city);
 
     }
 }

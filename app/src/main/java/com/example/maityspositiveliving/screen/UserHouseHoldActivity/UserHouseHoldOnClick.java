@@ -20,7 +20,7 @@ public class UserHouseHoldOnClick implements View.OnClickListener{
     private void setonclicklistner() {
 
         userHouseHoldViewBind.back_icon.setOnClickListener(this);
-        userHouseHoldViewBind.cleaning_lvid.setOnClickListener(this);
+      //  userHouseHoldViewBind.cleaning_lvid.setOnClickListener(this);
 
     }
 
@@ -34,12 +34,12 @@ public class UserHouseHoldOnClick implements View.OnClickListener{
             }
             break;
 
-            case R.id.cleaning_lvid:{
+           /* case R.id.cleaning_lvid:{
                 Intent intent=new Intent(userHouseHoldActivity, UserCleaningActivity.class);
                 userHouseHoldActivity. startActivity(intent);
               //  userHouseHoldActivity.finish();
             }
-            break;
+            break;*/
         }
     }
 }

@@ -132,12 +132,14 @@
                                 android:id="@+id/select_city_spinnerid"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
+                                android:popupBackground="@drawable/blue_outline_white_background"
                                 android:background="@android:color/transparent">
 
                             </Spinner>
                         </LinearLayout>
 
                         <ImageView
+                            android:id="@+id/img_city"
                             android:layout_width="@dimen/_40sdp"
                             android:layout_height="match_parent"
                             android:src="@drawable/arrow"
@@ -164,7 +166,10 @@
                         android:background="@drawable/asscolor_round"
                         android:inputType="text"
                         android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"
+
                         android:layout_marginBottom="@dimen/_4sdp"
+                        android:textColor="@color/text_color_light_blak"
                         android:layout_marginTop="@dimen/_4sdp"
                         android:fontFamily="@font/productsansregular"
 
@@ -190,6 +195,9 @@
                         android:inputType="number"
                         android:layout_marginBottom="@dimen/_40sdp"
                         android:layout_marginTop="@dimen/_4sdp"
+                        android:textSize="@dimen/_12sdp"
+
+                        android:textColor="@color/text_color_light_blak"
                         android:fontFamily="@font/productsansregular"
                         android:paddingLeft="@dimen/_10sdp"
                         >

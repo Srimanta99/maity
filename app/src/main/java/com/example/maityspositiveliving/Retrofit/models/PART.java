@@ -1,4 +1,4 @@
-package com.example.maityspositiveliving.models;
+package com.example.maityspositiveliving.Retrofit.models;
 
 import java.io.File;
 

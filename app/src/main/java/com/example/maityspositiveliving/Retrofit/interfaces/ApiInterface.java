@@ -1,4 +1,4 @@
-package com.example.maityspositiveliving.interfaces;
+package com.example.maityspositiveliving.Retrofit.interfaces;
 
 import java.util.HashMap;
 

@@ -66,15 +66,28 @@
 
                     <LinearLayout
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="0.4"
                         android:layout_marginRight="@dimen/_8sdp"
                         android:background="@drawable/asscolor_round"
                         android:orientation="horizontal"
                        >
 
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="  +91"
+                            android:textColor="@color/text_color_light_blak"
+                            android:gravity="center"
+                            android:textSize="@dimen/_18sdp"
+                            android:fontFamily="@font/productsansregular"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_india"
+                            android:paddingRight="@dimen/_10sdp"
+                           ></TextView>
 
-                        <Spinner
+
+                       <!-- <Spinner
                             android:id="@+id/spinner_country_code"
                             android:layout_width="wrap_content"
                             android:layout_height="@dimen/_40sdp"
@@ -96,7 +109,7 @@
                                 >
 
                             </ImageView>
-                        </LinearLayout>
+                        </LinearLayout>-->
 
 
 
@@ -115,8 +128,9 @@
                             android:layout_height="@dimen/_40sdp"
                             android:background="@android:color/transparent"
                             android:textStyle="normal"
-                            android:textSize="@dimen/_10sdp"
+                            android:textSize="@dimen/_18sdp"
                             android:imeOptions="actionDone"
+                            android:textColor="@color/text_color_light_blak"
                             android:gravity="center|left"
                             android:layout_gravity="center"
                             android:paddingLeft="@dimen/_9sdp"

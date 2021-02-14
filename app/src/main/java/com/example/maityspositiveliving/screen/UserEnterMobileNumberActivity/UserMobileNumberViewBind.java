@@ -32,7 +32,7 @@ public class UserMobileNumberViewBind extends DeviceResolution {
     // for findview
     private void initviewBind() {
         nextid=view.findViewById(R.id.nextid);
-        spinner_country_code=view.findViewById(R.id.spinner_country_code);
+      //  spinner_country_code=view.findViewById(R.id.spinner_country_code);
         etn_mobno=view.findViewById(R.id.etn_mobno);
 
     }

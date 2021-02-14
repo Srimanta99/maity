@@ -1,4 +1,4 @@
-package com.example.maityspositiveliving.models;
+package com.example.maityspositiveliving.Retrofit.models;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -7,10 +7,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
-
 import com.example.maityspositiveliving.NetWorkChecker;
-import com.example.maityspositiveliving.interfaces.ApiInterface;
-import com.example.maityspositiveliving.interfaces.OnCallBackListner;
+import com.example.maityspositiveliving.Retrofit.interfaces.ApiInterface;
+import com.example.maityspositiveliving.Retrofit.interfaces.OnCallBackListner;
 
 import org.json.JSONException;
 import org.json.JSONObject;

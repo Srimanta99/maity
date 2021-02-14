@@ -13,13 +13,15 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.maityspositiveliving.R;
-import com.example.maityspositiveliving.interfaces.OnCallBackListner;
-import com.example.maityspositiveliving.models.ApiRequest;
+
+import com.example.maityspositiveliving.Retrofit.interfaces.OnCallBackListner;
+import com.example.maityspositiveliving.Retrofit.models.ApiRequest;
 import com.example.maityspositiveliving.screen.Fragment.UserPaymentFragment.UserPaymentOnClick;
 import com.example.maityspositiveliving.screen.Fragment.UserPaymentFragment.UserPaymentViewBind;
 import com.example.maityspositiveliving.screen.UserStepThreeRegistrationActivity.UserStepThreeRegistrationActivity;
 import com.example.maityspositiveliving.screen.UserThankYouActivity.UserThankYouActivity;
 import com.example.maityspositiveliving.utils.ApplicationConstant;
+import com.example.maityspositiveliving.utils.MyToast;
 import com.example.maityspositiveliving.utils.RegistrationConstant;
 import com.example.maityspositiveliving.utils.SessionManager;
 
@@ -93,13 +95,12 @@ public class UserUpdateProfileFragment extends Fragment implements OnCallBackLis
     @Override
     public void OnCallBackSuccess(String tag, String body) {
         if (tag.equalsIgnoreCase("Update")){
-            Toast.makeText(getContext(), ""+body, Toast.LENGTH_SHORT).show();
             try {
                 JSONObject jsonObject=new JSONObject(body);
                 JSONObject jsonObject1=jsonObject.getJSONObject("messages");
 
 
-                Toast.makeText(getContext(), ""+jsonObject1.getString("success"), Toast.LENGTH_SHORT).show();
+                MyToast.show(getContext(),""+jsonObject1.getString("success"),true);
 
 
             } catch (JSONException e) {

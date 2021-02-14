@@ -5,6 +5,8 @@ import android.view.View;
 
 import com.example.maityspositiveliving.R;
 import com.example.maityspositiveliving.screen.UserStepTwoRegistrationActivity.UserStepTwoRegistrationActivity;
+import com.example.maityspositiveliving.screen.UserVerifyMobileNumberActivity.UserVerifyMobileNumberActivity;
+import com.example.maityspositiveliving.utils.MyToast;
 import com.example.maityspositiveliving.utils.RegistrationConstant;
 
 
@@ -36,8 +38,22 @@ public class UserStepOneRegistrationOnClick implements View.OnClickListener {
                 RegistrationConstant.NAME=etn_name;
                 RegistrationConstant.EMAIL_ID=etn_email;
 
-                Intent mainIntent = new Intent(userStepOneRegistrationActivity, UserStepTwoRegistrationActivity.class);
-                userStepOneRegistrationActivity.startActivity(mainIntent);
+                if (RegistrationConstant.NAME.isEmpty()){
+                    MyToast.show(userStepOneRegistrationActivity,"please Enter Your Name",true);
+
+                }else if (RegistrationConstant.EMAIL_ID.isEmpty()){
+                    MyToast.show(userStepOneRegistrationActivity,"please Enter Your Email id",true);
+
+                }
+                else {
+                    Intent mainIntent = new Intent(userStepOneRegistrationActivity, UserStepTwoRegistrationActivity.class);
+                    userStepOneRegistrationActivity.startActivity(mainIntent);
+                }
+
+
+
+               /* Intent mainIntent = new Intent(userStepOneRegistrationActivity, UserStepTwoRegistrationActivity.class);
+                userStepOneRegistrationActivity.startActivity(mainIntent);*/
                 // userStepOneRegistrationActivity.finish();
             }
             break;

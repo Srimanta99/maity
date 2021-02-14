@@ -31,7 +31,7 @@
         android:paddingStart="@dimen/_10sdp"
         android:padding="10dp"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="@dimen/_12sdp"
         android:fontFamily="@font/productsansregular"
         />
 

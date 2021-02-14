@@ -5,7 +5,9 @@ import android.view.View;
 
 import com.example.maityspositiveliving.R;
 import com.example.maityspositiveliving.screen.UserVerifyMobileNumberActivity.UserVerifyMobileNumberActivity;
+import com.example.maityspositiveliving.utils.MyToast;
 import com.example.maityspositiveliving.utils.RegistrationConstant;
+
 
 public class UserMobileNumberOnClick implements View.OnClickListener{
     UserMobileNumberActivity userMobileNumberActivity;
@@ -26,8 +28,17 @@ public class UserMobileNumberOnClick implements View.OnClickListener{
         switch (view.getId()){
             case R.id.nextid:{
                 RegistrationConstant.MOBILE_NUMBER=userMobileNumberViewBind.etn_mobno.getText().toString();
-                Intent mainIntent = new Intent(userMobileNumberActivity, UserVerifyMobileNumberActivity.class);
-                userMobileNumberActivity.startActivity(mainIntent);
+
+                if (userMobileNumberViewBind.etn_mobno.getText().toString().isEmpty()){
+                    MyToast.show(userMobileNumberActivity,"please Enter Your Mobile Number",true);
+
+                }else  if (userMobileNumberViewBind.etn_mobno.getText().toString().length()==10){
+                    Intent mainIntent = new Intent(userMobileNumberActivity, UserVerifyMobileNumberActivity.class);
+                    userMobileNumberActivity.startActivity(mainIntent);
+                }else {
+                    MyToast.show(userMobileNumberActivity,"please Enter 10 Numbers",true);
+
+                }
                // userMobileNumberActivity.finish();
             }
             break;

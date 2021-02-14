@@ -1,6 +1,4 @@
-package com.example.maityspositiveliving.interfaces;
-
-import org.json.JSONObject;
+package com.example.maityspositiveliving.Retrofit.interfaces;
 
 public interface OnCallBackListner {
 

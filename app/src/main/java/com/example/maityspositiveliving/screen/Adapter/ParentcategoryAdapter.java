@@ -7,14 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.maityspositiveliving.POJO.ParentcategoryList;
 import com.example.maityspositiveliving.R;
+
 import com.example.maityspositiveliving.screen.UserHouseHoldActivity.UserHouseHoldActivity;
+import com.example.maityspositiveliving.utils.ApplicationConstant;
 
 import java.util.List;
 
@@ -22,11 +23,12 @@ public class ParentcategoryAdapter extends RecyclerView.Adapter<ParentcategoryAd
     Context context;
     List<ParentcategoryList> parentcategoryLists;
     LayoutInflater layoutInflater;
-    String id;
+    String id,subcategory_url_withid;
 
     public ParentcategoryAdapter(Context context, List<ParentcategoryList> parentcategoryLists) {
         this.context = context;
         this.parentcategoryLists = parentcategoryLists;
+
     }
 
     @NonNull
@@ -47,8 +49,11 @@ public class ParentcategoryAdapter extends RecyclerView.Adapter<ParentcategoryAd
             @Override
             public void onClick(View view) {
                  id=   parentcategoryListpostion.getId();
-                Toast.makeText(context, ""+id, Toast.LENGTH_SHORT).show();
+               subcategory_url_withid=  ApplicationConstant.subcategory_url.concat(id);
+
+
                 Intent intent=new Intent(context, UserHouseHoldActivity.class);
+                intent.putExtra("subcategory_url",subcategory_url_withid);
                 context.startActivity(intent);
 
             }

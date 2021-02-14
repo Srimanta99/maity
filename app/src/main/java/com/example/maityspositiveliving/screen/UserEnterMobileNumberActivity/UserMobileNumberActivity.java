@@ -16,8 +16,9 @@ import android.widget.TextView;
 import com.example.maityspositiveliving.POJO.CountrycodeList;
 import com.example.maityspositiveliving.POJO.StateList;
 import com.example.maityspositiveliving.R;
-import com.example.maityspositiveliving.interfaces.OnCallBackListner;
-import com.example.maityspositiveliving.models.ApiRequest;
+
+import com.example.maityspositiveliving.Retrofit.interfaces.OnCallBackListner;
+import com.example.maityspositiveliving.Retrofit.models.ApiRequest;
 import com.example.maityspositiveliving.screen.UserStepThreeRegistrationActivity.UserStepThreeRegistrationActivity;
 import com.example.maityspositiveliving.utils.ApplicationConstant;
 import com.example.maityspositiveliving.utils.RegistrationConstant;
@@ -45,7 +46,7 @@ public class UserMobileNumberActivity extends AppCompatActivity implements OnCal
 
         apiRequest=new ApiRequest(this,this);
         countrycodeLists=new ArrayList<>();
-        apiForCountryCode();
+       // apiForCountryCode();
 
     }
 
