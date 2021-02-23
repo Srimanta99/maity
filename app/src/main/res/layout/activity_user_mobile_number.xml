@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
                     android:text="@string/Entermobile"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:textSize="@dimen/_15sdp"
                     android:layout_gravity="center"
                     android:gravity="center"
@@ -80,7 +80,7 @@
                             android:textColor="@color/text_color_light_blak"
                             android:gravity="center"
                             android:textSize="@dimen/_18sdp"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:paddingStart="@dimen/_10sdp"
                             android:drawableLeft="@drawable/ic_india"
                             android:paddingRight="@dimen/_10sdp"
@@ -135,7 +135,7 @@
                             android:layout_gravity="center"
                             android:paddingLeft="@dimen/_9sdp"
                             android:paddingRight="@dimen/_5sdp"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:inputType="phone"
                             android:singleLine="true"
                             android:lines="1"
@@ -156,6 +156,19 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/_110sdp"
                 >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    >
+
+                </TextView>
 
             </RelativeLayout>
 

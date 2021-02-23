@@ -24,10 +24,10 @@
                 android:text="@string/DASHBOARD"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
-                android:fontFamily="@font/productsansbold"
+                android:fontFamily="@font/rajdhanibold"
                 android:gravity="center"
                 android:layout_marginTop="@dimen/_5sdp"
-                android:textSize="@dimen/_18sdp">
+                android:textSize="@dimen/_20sdp">
 
             </TextView>
 

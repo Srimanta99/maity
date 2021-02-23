@@ -70,7 +70,7 @@ public class UserDeshBoardFragment extends Fragment implements OnCallBackListner
         if (tag.equalsIgnoreCase("parentcategory")){
             try {
 
-                JSONObject jsonObject=new JSONObject(body);
+            /*    JSONObject jsonObject=new JSONObject(body);
                 JSONArray jsonArray = jsonObject.getJSONArray("table");
                 for (int i = 0; i < jsonArray.length(); i++) {
 
@@ -81,6 +81,22 @@ public class UserDeshBoardFragment extends Fragment implements OnCallBackListner
                             jsonObject1.getString("category_name"),
                             jsonObject1.getString("category_icon"),
                             jsonObject1.getString("parent_category"),
+                            jsonObject1.getString("status")
+
+                    );
+                    parentcategoryLists.add(parentcategoryList);
+
+                }*/
+
+                JSONArray jsonArray=new JSONArray(body);
+                for (int i = 0; i < jsonArray.length(); i++) {
+
+                    JSONObject jsonObject1 = jsonArray.getJSONObject(i);
+
+                    ParentcategoryList parentcategoryList = new ParentcategoryList(
+                            jsonObject1.getString("id"),
+                            jsonObject1.getString("category_name"),
+                            jsonObject1.getString("category_desc"),
                             jsonObject1.getString("status")
 
                     );
@@ -103,47 +119,6 @@ public class UserDeshBoardFragment extends Fragment implements OnCallBackListner
 
         }
 
-
-       /* else if (tag.equalsIgnoreCase("subcategory")){
-            try {
-
-                JSONObject jsonObject=new JSONObject(body);
-                JSONArray jsonArray = jsonObject.getJSONArray("table");
-                for (int i = 0; i < jsonArray.length(); i++) {
-
-                    JSONObject jsonObject1 = jsonArray.getJSONObject(i);
-
-                    ParentcategoryList parentcategoryList = new ParentcategoryList(
-                            jsonObject1.getString("id"),
-                            jsonObject1.getString("category_name"),
-                            jsonObject1.getString("category_icon"),
-                            jsonObject1.getString("parent_category"),
-                            jsonObject1.getString("status")
-
-                    );
-                    parentcategoryLists.add(parentcategoryList);
-
-                }
-
-                ParentcategoryAdapter parentcategoryAdapter = new ParentcategoryAdapter(getActivity(), parentcategoryLists, new ParentcategoryInterface() {
-                    @Override
-                    public void pass_subcategory_url(String subcategory_url_withid) {
-                        apiForsubcategory_url(subcategory_url_withid);
-                    }
-                });
-                userDeshBoardViewBind. rv_parentcategory.setAdapter(parentcategoryAdapter);
-
-                GridLayoutManager gridLayoutManager1 = new GridLayoutManager(getActivity(), 2);
-                userDeshBoardViewBind. rv_parentcategory.setLayoutManager(gridLayoutManager1);
-                userDeshBoardViewBind. rv_parentcategory.setItemAnimator(new DefaultItemAnimator());
-                userDeshBoardViewBind. rv_parentcategory.setNestedScrollingEnabled(false);
-                userDeshBoardViewBind. rv_parentcategory.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(1), true));
-
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-
-        }*/
     }
 
     @Override

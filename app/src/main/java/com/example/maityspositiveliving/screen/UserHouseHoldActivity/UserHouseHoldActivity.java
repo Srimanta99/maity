@@ -72,8 +72,10 @@ public class UserHouseHoldActivity extends AppCompatActivity implements OnCallBa
                 SubcategoryList subcategoryList=new SubcategoryList(
                         jsonObject.getString("id"),
                         jsonObject.getString("category_name"),
+                        jsonObject.getString("category_desc"),
                         jsonObject.getString("category_icon"),
                         jsonObject.getString("parent_category"),
+                        jsonObject.getString("amount"),
                         jsonObject.getString("status")
 
                         );

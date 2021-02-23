@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Complete your registration"
         android:textColor="@color/white"
+        android:fontFamily="@font/rajdhanimedium"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="@dimen/_15sdp">
@@ -59,7 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/DOB"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:textColor="@color/text_color_blue"
                     android:paddingLeft="@dimen/_15sdp">
 
@@ -85,7 +86,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_40sdp"
                             android:inputType="text"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:padding="@dimen/_10sdp"
                             android:textSize="@dimen/_12sdp"
                             android:textColor="@color/text_color_light_blak"
@@ -114,7 +115,7 @@
                     android:text="@string/Gender"
                     android:textColor="@color/text_color_blue"
                     android:paddingLeft="@dimen/_15sdp"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     >
 
                 </TextView>
@@ -144,7 +145,7 @@
                             android:layout_height="match_parent"
                             android:text="Male"
                             android:textColor="@color/white"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:textSize="@dimen/_18sdp"
                             android:paddingLeft="@dimen/_8sdp"
                             >
@@ -170,7 +171,7 @@
                             android:layout_height="match_parent"
                             android:text="Female"
                             android:textColor="@color/white"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
 
                             android:textSize="@dimen/_18sdp"
                             android:paddingLeft="@dimen/_8sdp"
@@ -199,7 +200,7 @@
                             android:textColor="@color/white"
                             android:textSize="@dimen/_18sdp"
                             android:paddingLeft="@dimen/_8sdp"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             >
 
                         </TextView>
@@ -263,7 +264,18 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/_218sdp"
                 >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    >
 
+                </TextView>
             </RelativeLayout>
         </RelativeLayout>
     </LinearLayout>

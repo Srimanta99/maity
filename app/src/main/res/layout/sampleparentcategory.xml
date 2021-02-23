@@ -31,7 +31,7 @@
             android:layout_height="match_parent"
             android:text="@string/HouseHold"
             android:paddingLeft="@dimen/_10sdp"
-            android:fontFamily="@font/productsansregular"
+            android:fontFamily="@font/rajdhanimedium"
             android:gravity="top"
             android:textColor="@color/white"
             >

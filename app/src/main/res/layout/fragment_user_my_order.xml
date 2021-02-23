@@ -31,13 +31,12 @@
                >
 
                 <TextView
-                    android:id="@+id/household"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/HouseHold"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15sdp"
-                    android:fontFamily="@font/productsansbold"
+                    android:fontFamily="@font/rajdhanibold"
                     android:paddingTop="@dimen/_4sdp"
                     android:paddingBottom="@dimen/_4sdp"
                     android:paddingLeft="@dimen/_10sdp"
@@ -65,7 +64,7 @@
                     android:layout_alignRight="@+id/household"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15sdp"
-                    android:fontFamily="@font/productsansbold">
+                    android:fontFamily="@font/rajdhanibold">
 
 
                 </TextView>
@@ -121,7 +120,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/CleaningCategory"
-                            android:fontFamily="@font/productsansbold"
+                            android:fontFamily="@font/rajdhanibold"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -130,7 +129,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Deep Cleaning"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -153,7 +152,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Square Feet : "
-                            android:fontFamily="@font/productsansbold"
+                            android:fontFamily="@font/rajdhanibold"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -162,7 +161,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1100 sqft."
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -184,7 +183,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Disinfectant : "
-                            android:fontFamily="@font/productsansbold"
+                            android:fontFamily="@font/rajdhanibold"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -193,7 +192,254 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Rewarded"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:textColor="@color/text_color_light_blak">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="15 "
+                        android:textSize="@dimen/_32sdp"
+                        android:layout_gravity="bottom|left"
+                        android:gravity="bottom|left"
+                        android:fontFamily="@font/rajdhanibold">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="JAN 2021"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_gravity="left"
+                        android:gravity="left"
+                        android:fontFamily="@font/rajdhanibold">
+
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/view_color_nav"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp">
+
+            </View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Amount : Rs. 520/-"
+                android:fontFamily="@font/rajdhanibold"
+                android:textColor="@color/text_color_light_blak"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:background="@drawable/white_capsual_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/blue_half_redious"
+                >
+
+                <TextView
+                    android:id="@+id/household"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HouseHold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    >
+
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:src="@drawable/housearrow"
+                    android:layout_gravity="center"
+                    >
+
+                </ImageView>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cleaning"
+                    android:layout_alignRight="@+id/household"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp"
+                    android:fontFamily="@font/rajdhanibold">
+
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center"
+                    android:layout_alignParentRight="true"
+
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:src="@drawable/deleteimg"
+                        android:scaleType="fitXY"
+
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_gravity="center|right"
+                        >
+                    </ImageView>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/tick"
+                            android:layout_gravity="center"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/CleaningCategory"
+                            android:fontFamily="@font/rajdhanibold"
+                            android:textColor="@color/text_color_light_blak">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deep Cleaning"
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:textColor="@color/text_color_light_blak">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/tick"
+                            android:layout_gravity="center"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Square Feet : "
+                            android:fontFamily="@font/rajdhanibold"
+                            android:textColor="@color/text_color_light_blak">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1100 sqft."
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:textColor="@color/text_color_light_blak">
+
+                        </TextView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_10sdp"
+                            android:src="@drawable/tick"
+                            android:layout_gravity="center"
+                            >
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Disinfectant : "
+                            android:fontFamily="@font/rajdhanibold"
+                            android:textColor="@color/text_color_light_blak">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rewarded"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -218,7 +464,7 @@
                         android:textSize="@dimen/_32sdp"
                         android:layout_gravity="bottom|left"
                         android:gravity="bottom|left"
-                        android:fontFamily="@font/productsansbold">
+                        android:fontFamily="@font/rajdhanibold">
 
 
                     </TextView>
@@ -230,7 +476,7 @@
                         android:textSize="@dimen/_15sdp"
                         android:layout_gravity="left"
                         android:gravity="left"
-                        android:fontFamily="@font/productsansbold">
+                        android:fontFamily="@font/rajdhanibold">
 
 
                     </TextView>
@@ -251,7 +497,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Amount : Rs. 520/-"
-                android:fontFamily="@font/productsansbold"
+                android:fontFamily="@font/rajdhanibold"
                 android:textColor="@color/text_color_light_blak"
                 android:textSize="@dimen/_16sdp"
                 android:layout_marginLeft="@dimen/_8sdp"
@@ -281,10 +527,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="House Hold"
+                    android:text="@string/HouseHold"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15sdp"
-                    android:fontFamily="@font/productsansbold"
+                    android:fontFamily="@font/rajdhanibold"
                     android:paddingTop="@dimen/_4sdp"
                     android:paddingBottom="@dimen/_4sdp"
                     android:paddingLeft="@dimen/_10sdp"
@@ -308,11 +554,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cleaning"
+                    android:text="@string/Cleaning"
                     android:layout_alignRight="@+id/household"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_15sdp"
-                    android:fontFamily="@font/productsansbold">
+                    android:fontFamily="@font/rajdhanibold">
 
 
                 </TextView>
@@ -367,8 +613,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cleaning Category : "
-                            android:fontFamily="@font/productsansbold"
+                            android:text="@string/CleaningCategory"
+                            android:fontFamily="@font/rajdhanibold"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -377,7 +623,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Deep Cleaning"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -400,7 +646,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Square Feet : "
-                            android:fontFamily="@font/productsansbold"
+                            android:fontFamily="@font/rajdhanibold"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -409,7 +655,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1100 sqft."
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -431,7 +677,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Disinfectant : "
-                            android:fontFamily="@font/productsansbold"
+                            android:fontFamily="@font/rajdhanibold"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -440,7 +686,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Rewarded"
-                            android:fontFamily="@font/productsansregular"
+                            android:fontFamily="@font/rajdhanimedium"
                             android:textColor="@color/text_color_light_blak">
 
                         </TextView>
@@ -464,7 +710,7 @@
                         android:textSize="@dimen/_32sdp"
                         android:layout_gravity="bottom|left"
                         android:gravity="bottom|left"
-                        android:fontFamily="@font/productsansbold">
+                        android:fontFamily="@font/rajdhanibold">
 
 
                     </TextView>
@@ -476,7 +722,7 @@
                         android:textSize="@dimen/_15sdp"
                         android:layout_gravity="left"
                         android:gravity="left"
-                        android:fontFamily="@font/productsansbold">
+                        android:fontFamily="@font/rajdhanibold">
 
 
                     </TextView>
@@ -497,253 +743,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Amount : Rs. 520/-"
-                android:fontFamily="@font/productsansbold"
-                android:textColor="@color/text_color_light_blak"
-                android:textSize="@dimen/_16sdp"
-                android:layout_marginLeft="@dimen/_8sdp"
-                android:layout_marginBottom="@dimen/_4sdp"
-                android:layout_marginTop="@dimen/_4sdp">
-
-            </TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_15sdp"
-            android:layout_marginRight="@dimen/_15sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:orientation="vertical"
-            android:background="@drawable/white_capsual_bg">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/blue_half_redious"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="House Hold"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_15sdp"
-                    android:fontFamily="@font/productsansbold"
-                    android:paddingTop="@dimen/_4sdp"
-                    android:paddingBottom="@dimen/_4sdp"
-                    android:paddingLeft="@dimen/_10sdp"
-                    >
-
-
-                </TextView>
-
-                <ImageView
-                    android:layout_width="@dimen/_14sdp"
-                    android:layout_height="@dimen/_8sdp"
-                    android:src="@drawable/housearrow"
-                    android:layout_gravity="center"
-                    >
-
-                </ImageView>
-
-
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cleaning"
-                    android:layout_alignRight="@+id/household"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_15sdp"
-                    android:fontFamily="@font/productsansbold">
-
-
-                </TextView>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="right|center"
-                    android:layout_alignParentRight="true"
-
-                    >
-                    <ImageView
-                        android:layout_width="@dimen/_15sdp"
-                        android:layout_height="@dimen/_16sdp"
-                        android:src="@drawable/deleteimg"
-                        android:scaleType="fitXY"
-
-                        android:layout_marginRight="@dimen/_15sdp"
-                        android:layout_gravity="center|right"
-                        >
-                    </ImageView>
-                </LinearLayout>
-
-
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_marginLeft="@dimen/_6sdp"
-                    android:layout_marginTop="@dimen/_2sdp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_5sdp">
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_10sdp"
-                            android:src="@drawable/tick"
-                            android:layout_gravity="center"
-                            >
-
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Cleaning Category : "
-                            android:fontFamily="@font/productsansbold"
-                            android:textColor="@color/text_color_light_blak">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Deep Cleaning"
-                            android:fontFamily="@font/productsansregular"
-                            android:textColor="@color/text_color_light_blak">
-
-                        </TextView>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_5sdp">
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_10sdp"
-                            android:src="@drawable/tick"
-                            android:layout_gravity="center"
-                            >
-
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Square Feet : "
-                            android:fontFamily="@font/productsansbold"
-                            android:textColor="@color/text_color_light_blak">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="1100 sqft."
-                            android:fontFamily="@font/productsansregular"
-                            android:textColor="@color/text_color_light_blak">
-
-                        </TextView>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/_5sdp">
-                        <ImageView
-                            android:layout_width="@dimen/_14sdp"
-                            android:layout_height="@dimen/_10sdp"
-                            android:src="@drawable/tick"
-                            android:layout_gravity="center"
-                            >
-
-                        </ImageView>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Disinfectant : "
-                            android:fontFamily="@font/productsansbold"
-                            android:textColor="@color/text_color_light_blak">
-
-                        </TextView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Rewarded"
-                            android:fontFamily="@font/productsansregular"
-                            android:textColor="@color/text_color_light_blak">
-
-                        </TextView>
-
-                    </LinearLayout>
-
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="15 "
-                        android:textSize="@dimen/_32sdp"
-                        android:layout_gravity="bottom|left"
-                        android:gravity="bottom|left"
-                        android:fontFamily="@font/productsansbold">
-
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="JAN 2021"
-                        android:textSize="@dimen/_15sdp"
-                        android:layout_gravity="left"
-                        android:gravity="left"
-                        android:fontFamily="@font/productsansbold">
-
-
-                    </TextView>
-
-                </LinearLayout>
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:background="@color/view_color_nav"
-                android:layout_marginLeft="@dimen/_6sdp"
-                android:layout_marginRight="@dimen/_6sdp">
-
-            </View>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Total Amount : Rs. 520/-"
-                android:fontFamily="@font/productsansbold"
+                android:fontFamily="@font/rajdhanibold"
                 android:textColor="@color/text_color_light_blak"
                 android:textSize="@dimen/_16sdp"
                 android:layout_marginLeft="@dimen/_8sdp"

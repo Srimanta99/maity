@@ -1,5 +1,6 @@
 package com.example.maityspositiveliving.screen.UserCleaningActivity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.view.View;
 
@@ -11,6 +12,8 @@ import com.example.maityspositiveliving.screen.UserHouseHoldActivity.UserHouseHo
 public class UserCleaningOnClick implements View.OnClickListener{
     UserCleaningActivity userCleaningActivity;
     UserCleaningViewBind userCleaningViewBind;
+    public static final int STORAGE_PERMISSION_CODE = 101;
+    public static final int CAMERA_PERMISSION_CODE = 100;
 
     public UserCleaningOnClick( UserCleaningActivity userCleaningActivity,UserCleaningViewBind userCleaningViewBind) {
         this.userCleaningActivity=userCleaningActivity;
@@ -22,6 +25,7 @@ public class UserCleaningOnClick implements View.OnClickListener{
 
         userCleaningViewBind.back_icon.setOnClickListener(this);
         userCleaningViewBind.submit_btnid.setOnClickListener(this);
+        userCleaningViewBind.tv_upload.setOnClickListener(this);
 
     }
 
@@ -36,11 +40,25 @@ public class UserCleaningOnClick implements View.OnClickListener{
             break;
 
             case R.id.submit_btnid:{
-                Intent intent=new Intent(userCleaningActivity, UserCleaningPlaceOrderActivity.class);
-                userCleaningActivity.startActivity(intent);
+
+                userCleaningActivity.apiForOrderApi();
+
+               /* Intent intent=new Intent(userCleaningActivity, UserCleaningPlaceOrderActivity.class);
+                userCleaningActivity.startActivity(intent);*/
             }
             break;
 
+
+            case R.id.tv_upload:{
+                userCleaningActivity. checkPermission(
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        STORAGE_PERMISSION_CODE);
+
+                userCleaningActivity.  checkPermission(Manifest.permission.CAMERA,
+                        CAMERA_PERMISSION_CODE);
+                userCleaningActivity.showPictureDialog();
+            }
+            break;
 
         }
     }

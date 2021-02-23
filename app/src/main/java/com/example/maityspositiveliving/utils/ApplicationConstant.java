@@ -10,4 +10,6 @@ public class ApplicationConstant {
     public static String update_url=url+"CustomarApi/update/10";
     public static String parentcategory_url=url+"CategoryApi/parentcategory";
     public static String subcategory_url=url+"CategoryApi/subcategory/";
+    public static String OrderApi_url=url+"OrderApi/insert";
+
 }

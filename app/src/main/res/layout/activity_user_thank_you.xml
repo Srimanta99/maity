@@ -39,7 +39,7 @@
                     android:text="Thank You\nfor getting registered\nWith"
                     android:textColor="#fff"
                     android:textSize="@dimen/_30sdp"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:gravity="center"
                     android:paddingTop="@dimen/_10sdp">
 
@@ -60,9 +60,22 @@
                     android:id="@+id/lets_start_id"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="@dimen/_50sdp"
-                    android:background="@drawable/letsstart"
+                    android:background="@drawable/nexttext"
                     android:layout_centerHorizontal="true"
                     >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Let\'s Start"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_22sdp"
+                        android:fontFamily="@font/rajdhanibold"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        >
+
+                    </TextView>
 
                 </RelativeLayout>
             </RelativeLayout>

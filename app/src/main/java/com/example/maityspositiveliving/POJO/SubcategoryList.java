@@ -1,14 +1,32 @@
 package com.example.maityspositiveliving.POJO;
 
 public class SubcategoryList {
-    String id,category_name,category_icon,parent_category,status;
+    String id,category_name,category_desc,category_icon,parent_category,amount,status;
 
-    public SubcategoryList(String id, String category_name, String category_icon, String parent_category, String status) {
+    public SubcategoryList(String id, String category_name, String category_desc, String category_icon, String parent_category, String amount, String status) {
         this.id = id;
         this.category_name = category_name;
+        this.category_desc = category_desc;
         this.category_icon = category_icon;
         this.parent_category = parent_category;
+        this.amount = amount;
         this.status = status;
+    }
+
+    public String getCategory_desc() {
+        return category_desc;
+    }
+
+    public void setCategory_desc(String category_desc) {
+        this.category_desc = category_desc;
+    }
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
     public String getId() {

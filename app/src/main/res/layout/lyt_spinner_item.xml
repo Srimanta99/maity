@@ -32,7 +32,7 @@
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="@dimen/_12sdp"
-        android:fontFamily="@font/productsansregular"
+        android:fontFamily="@font/rajdhanimedium"
         />
 
 

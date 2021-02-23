@@ -19,7 +19,7 @@
         android:textColor="#fff"
         android:layout_gravity="center"
         android:textSize="@dimen/_15sdp"
-        android:fontFamily="@font/productsansregular"
+        android:fontFamily="@font/rajdhanimedium"
         android:gravity="center"
         android:paddingTop="@dimen/_10sdp"
         android:paddingBottom="@dimen/_5sdp">
@@ -42,6 +42,19 @@
             android:layout_marginRight="@dimen/_28sdp"
             android:layout_marginTop="@dimen/_35sdp">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/SERVICEUSER"
+                android:textColor="@color/text_color_dark_blue"
+                android:textSize="@dimen/_22sdp"
+                android:fontFamily="@font/rajdhanibold"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_70sdp"
+                >
+
+            </TextView>
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -53,6 +66,20 @@
             android:layout_marginRight="@dimen/_28sdp"
             android:layout_marginTop="@dimen/_25sdp"
             android:layout_below="@+id/serviceuserid">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/SERVICEPROVIDER"
+                android:textColor="@color/text_color_dark_blue"
+                android:textSize="@dimen/_22sdp"
+                android:fontFamily="@font/rajdhanibold"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_70sdp"
+                >
+
+            </TextView>
+
 
         </RelativeLayout>
     </RelativeLayout>

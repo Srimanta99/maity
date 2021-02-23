@@ -1,6 +1,7 @@
 package com.example.maityspositiveliving.screen.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.maityspositiveliving.POJO.SubcategoryList;
 import com.example.maityspositiveliving.R;
+import com.example.maityspositiveliving.screen.UserCleaningActivity.UserCleaningActivity;
+import com.example.maityspositiveliving.screen.UserHouseHoldActivity.UserHouseHoldActivity;
 
 import java.util.List;
 
@@ -44,6 +47,17 @@ public class SubcategoryAdapter extends RecyclerView.Adapter<SubcategoryAdapter.
             holder.lv_subcatagory.setBackgroundResource(R.color.sky_bg);
 
         }
+
+        holder.lv_subcatagory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(context, UserCleaningActivity.class);
+                intent.putExtra("description",subcategoryListposition.getCategory_desc());
+                intent.putExtra("categories_id",subcategoryListposition.getParent_category());
+                intent.putExtra("amount",subcategoryListposition.getAmount());
+                context.startActivity(intent);
+            }
+        });
 
     }
 

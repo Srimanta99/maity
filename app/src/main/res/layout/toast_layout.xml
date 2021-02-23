@@ -25,7 +25,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:textSize="@dimen/_12sdp"
-        android:fontFamily="@font/productsansbold"
+        android:fontFamily="@font/rajdhanibold"
         android:textColor="@color/white"
         />
 

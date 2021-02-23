@@ -2,14 +2,18 @@ package com.example.maityspositiveliving.screen.Splash;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.maityspositiveliving.R;
@@ -33,8 +37,10 @@ public class SplashActivity extends AppCompatActivity {
         View view= LayoutInflater.from(this).inflate(R.layout.activity_splash,null);
         setContentView(view);
         new Handler().postDelayed(new Runnable(){
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void run() {
+
                 Intent intent=new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();

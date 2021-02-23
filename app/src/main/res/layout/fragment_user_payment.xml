@@ -24,7 +24,7 @@
             android:text="@string/WalletBalance"
             android:textSize="@dimen/_20sdp"
            android:textColor="@color/text_color_dark_blue"
-            android:fontFamily="@font/productsansregular"
+            android:fontFamily="@font/rajdhanimedium"
             android:gravity="center"
             android:paddingTop="@dimen/_10sdp"
             android:paddingBottom="@dimen/_3sdp">
@@ -37,7 +37,7 @@
             android:text="\u20B9 2,750"
             android:textSize="@dimen/_40sdp"
             android:textColor="@color/white"
-            android:fontFamily="@font/productsansbold"
+            android:fontFamily="@font/rajdhanibold"
             android:gravity="center"
             >
 
@@ -49,10 +49,21 @@
         android:id="@+id/addmoney_btnid"
         android:layout_width="@dimen/_130sdp"
         android:layout_height="@dimen/_45sdp"
-        android:background="@drawable/addmojey"
+        android:background="@drawable/submitbg"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_110sdp"
         >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:fontFamily="@font/rajdhanibold"
+            android:gravity="center"
+            android:text="Add Money"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sdp">
+
+        </TextView>
 
     </RelativeLayout>
 </RelativeLayout>
@@ -84,7 +95,7 @@
                     android:layout_width="98dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:gravity="center"
                     android:paddingTop="@dimen/_8sdp"
                     android:paddingBottom="@dimen/_8sdp"
@@ -117,7 +128,7 @@
                     android:paddingTop="@dimen/_8sdp"
                     android:paddingBottom="@dimen/_8sdp"
                     android:textSize="@dimen/_14sdp"
-                    android:fontFamily="@font/productsansregular">
+                    android:fontFamily="@font/rajdhanimedium">
 
                 </TextView>
             </LinearLayout>
@@ -143,7 +154,7 @@
                     android:paddingBottom="@dimen/_8sdp"
                     android:gravity="center"
                     android:textSize="@dimen/_14sdp"
-                    android:fontFamily="@font/productsansregular">
+                    android:fontFamily="@font/rajdhanimedium">
 
                 </TextView>
             </LinearLayout>
@@ -198,7 +209,7 @@
                             android:gravity="left|center"
                             android:paddingLeft="@dimen/_20sdp"
                             android:layout_gravity="center|left"
-                            android:fontFamily="@font/productsansregular">
+                            android:fontFamily="@font/rajdhanimedium">
 
                         </TextView>
                         <LinearLayout
@@ -254,7 +265,7 @@
                             android:gravity="left|center"
                             android:paddingLeft="@dimen/_20sdp"
                             android:layout_gravity="center|left"
-                            android:fontFamily="@font/productsansregular">
+                            android:fontFamily="@font/rajdhanimedium">
 
                         </TextView>
 
@@ -308,7 +319,7 @@
                             android:gravity="left|center"
                             android:paddingLeft="@dimen/_5sdp"
                             android:layout_gravity="center|left"
-                            android:fontFamily="@font/productsansregular">
+                            android:fontFamily="@font/rajdhanimedium">
 
                         </TextView>
 
@@ -400,7 +411,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/text_color_dark_blue"
-                android:fontFamily="@font/productsansregular"
+                android:fontFamily="@font/rajdhanimedium"
                 android:textSize="@dimen/_14sdp"
                 android:paddingTop="@dimen/_25sdp">
 
@@ -417,9 +428,21 @@
                     android:id="@+id/payment_btnid"
                     android:layout_width="@dimen/_130sdp"
                     android:layout_height="@dimen/_48sdp"
-                    android:background="@drawable/payment"
+                    android:background="@drawable/nexttext"
                     android:layout_marginBottom="@dimen/_20sdp"
                     >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Payment"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_22sdp"
+                        android:fontFamily="@font/rajdhanibold"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        >
+
+                    </TextView>
 
                 </RelativeLayout>
             </RelativeLayout>

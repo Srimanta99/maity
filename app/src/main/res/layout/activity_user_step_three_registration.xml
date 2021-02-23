@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Complete your registration"
         android:textColor="@color/white"
-        android:fontFamily="@font/productsansregular"
+        android:fontFamily="@font/rajdhanimedium"
         android:layout_gravity="center"
         android:gravity="center"
         android:textSize="@dimen/_15sdp">
@@ -65,7 +65,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Selectstate"
-                        android:fontFamily="@font/productsansregular"
+                        android:fontFamily="@font/rajdhanimedium"
                         android:textColor="@color/text_color_blue"
                        >
 
@@ -110,7 +110,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Selectcity"
-                        android:fontFamily="@font/productsansregular"
+                        android:fontFamily="@font/rajdhanimedium"
                         android:textColor="@color/text_color_blue"
                        >
 
@@ -154,7 +154,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/Enteraddress"
                         android:textColor="@color/text_color_blue"
-                        android:fontFamily="@font/productsansregular"
+                        android:fontFamily="@font/rajdhanimedium"
                         >
 
                     </TextView>
@@ -171,7 +171,7 @@
                         android:layout_marginBottom="@dimen/_4sdp"
                         android:textColor="@color/text_color_light_blak"
                         android:layout_marginTop="@dimen/_4sdp"
-                        android:fontFamily="@font/productsansregular"
+                        android:fontFamily="@font/rajdhanimedium"
 
                         >
                     </EditText>
@@ -181,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/EnterPIN"
                         android:textColor="@color/text_color_blue"
-                        android:fontFamily="@font/productsansregular"
+                        android:fontFamily="@font/rajdhanimedium"
                         >
                     </TextView>
 
@@ -198,7 +198,7 @@
                         android:textSize="@dimen/_12sdp"
 
                         android:textColor="@color/text_color_light_blak"
-                        android:fontFamily="@font/productsansregular"
+                        android:fontFamily="@font/rajdhanimedium"
                         android:paddingLeft="@dimen/_10sdp"
                         >
                     </EditText>
@@ -217,6 +217,19 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/_335sdp"
                 >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    >
+
+                </TextView>
 
             </RelativeLayout>
         </RelativeLayout>

@@ -114,14 +114,20 @@ public class ApiRequest {
 
                 @Override
                 public void onResponse(Call<String> call, Response<String> response) {
+                    if (response.body()!=null) {
+                        try {
+                            Log.e(tag + "_responsedata", String.valueOf(new JSONObject(response.body())));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                        onCallBackSuccess(call, response);
+                    }
+                    else {
+                        progressDialog.dismiss();
 
-                    try {
-                        Log.e(tag + "_responsedata", String.valueOf(new JSONObject(response.body())));
-                    } catch (JSONException e) {
-                        e.printStackTrace();
+                        Toast.makeText(context, "Response is null", Toast.LENGTH_SHORT).show();
                     }
 
-                   onCallBackSuccess(call, response);
 
                 }
 
@@ -153,11 +159,11 @@ public class ApiRequest {
                 @Override
                 public void onResponse(Call<String> call, Response<String> response) {
 
-              /*  try {
+                try {
                     Log.e(tag + "_responsedata", String.valueOf(new JSONObject(response.body())));
                 } catch (JSONException e) {
                     e.printStackTrace();
-                }*/
+                }
 
                     onCallBackSuccess(call, response);
 
@@ -172,10 +178,6 @@ public class ApiRequest {
         }
 
     }
-
-
-
-
 
    // FOR FILE UPLOADING
 
@@ -194,6 +196,7 @@ public class ApiRequest {
                 @Override
                 public void onResponse(@NonNull Call<String> call, @NonNull Response<String> response) {
 
+                    if (response.body()!=null) {
                     try {
                         Log.e(tag + "_responsedata", String.valueOf(new JSONObject(response.body())));
 
@@ -202,6 +205,12 @@ public class ApiRequest {
                     }
 
                     onCallBackSuccess(call, response);
+                    }
+                    else {
+                        progressDialog.dismiss();
+
+                        Toast.makeText(context, "Response is null", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
                 @Override

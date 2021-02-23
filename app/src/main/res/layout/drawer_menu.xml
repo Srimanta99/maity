@@ -21,7 +21,7 @@
                 android:text="PROFILE"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_18sdp"
-                android:fontFamily="@font/productsansbold">
+                android:fontFamily="@font/rajdhanibold">
 
             </TextView>
 
@@ -99,11 +99,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:text="Priyam Ghosh"
-                    android:fontFamily="@font/productsansregular"
-                    android:textSize="@dimen/_16sdp"
                     android:textColor="@color/white"
-                    android:layout_marginBottom="@dimen/_6sdp">
+                    android:textSize="@dimen/_16sdp">
 
                 </TextView>
 
@@ -112,7 +112,7 @@
                     android:layout_height="wrap_content"
                     android:text="+918777069940"
                     android:textSize="@dimen/_10sdp"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:textColor="@color/white">
 
                 </TextView>
@@ -171,7 +171,7 @@
                     android:text="@string/Dashboard"
                     android:textSize="@dimen/_16sdp"
                     android:layout_marginLeft="@dimen/_7sdp"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:textColor="@color/text_color_light_blak"
                     android:gravity="left|center"
                     >
@@ -215,7 +215,7 @@
                     android:text="My Orders"
                     android:textSize="@dimen/_16sdp"
                     android:layout_marginLeft="@dimen/_7sdp"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:textColor="@color/text_color_light_blak"
                     android:gravity="left|center"
                     >
@@ -259,7 +259,7 @@
                     android:text="Payments"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:textSize="@dimen/_16sdp"
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:textColor="@color/text_color_light_blak"
                     android:gravity="left|center"
                     >
@@ -304,7 +304,7 @@
                     android:textSize="@dimen/_16sdp"
                     android:layout_marginLeft="@dimen/_7sdp"
 
-                    android:fontFamily="@font/productsansregular"
+                    android:fontFamily="@font/rajdhanimedium"
                     android:textColor="@color/text_color_light_blak"
                     android:gravity="left|center"
                     >
@@ -325,11 +325,37 @@
             android:gravity="bottom|center">
 
             <RelativeLayout
-                android:layout_width="@dimen/_130sdp"
+                android:layout_width="@dimen/_135sdp"
                 android:layout_height="@dimen/_48sdp"
-                android:background="@drawable/logout"
+                android:background="@drawable/nexttext"
                 android:layout_marginBottom="@dimen/_20sdp"
                 >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_4sdp"
+
+                    >
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:background="@drawable/logouticon"
+                    android:layout_gravity="right|center"
+                    android:layout_marginLeft="@dimen/_100sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    >
+
+                </ImageView>
+
 
             </RelativeLayout>
         </RelativeLayout>

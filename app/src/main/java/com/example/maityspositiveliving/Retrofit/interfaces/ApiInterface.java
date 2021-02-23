@@ -22,6 +22,7 @@ public interface ApiInterface {
     @FormUrlEncoded
     @POST()
     Call<String> getPost (@Url String url, @FieldMap HashMap<String, String> params , @Header("tag") String tag);
+
     @Multipart
     @POST()
     Call<String> getPost(@Url String url, @PartMap HashMap<String, RequestBody> param, @Part MultipartBody.Part file, @Header("tag") String tag);

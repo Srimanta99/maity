@@ -14,8 +14,9 @@ public class UserCleaningViewBind extends DeviceResolution {
     View view;
     RelativeLayout back_icon;
     TextView toolname_id;
-    LinearLayout submit_btnid;
-    TextView headername_tvid,note_tvid;
+    RelativeLayout submit_btnid;
+    TextView headername_tvid,note_tvid,tv_upload,tv_amount;
+    LinearLayout lv_attachmentone;
 
 
     public UserCleaningViewBind( UserCleaningActivity userCleaningActivity, View view) {
@@ -37,6 +38,8 @@ public class UserCleaningViewBind extends DeviceResolution {
         submit_btnid=view.findViewById(R.id.submit_btnid);
         headername_tvid=view.findViewById(R.id.headername_tvid);
         note_tvid=view.findViewById(R.id.note_tvid);
-
+        tv_upload=view.findViewById(R.id.tv_upload);
+        tv_amount=view.findViewById(R.id.tv_amount);
+        lv_attachmentone=view.findViewById(R.id.lv_attachmentone);
     }
 }
