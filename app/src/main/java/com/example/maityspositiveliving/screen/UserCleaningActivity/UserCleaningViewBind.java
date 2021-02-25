@@ -1,6 +1,7 @@
 package com.example.maityspositiveliving.screen.UserCleaningActivity;
 
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -16,6 +17,7 @@ public class UserCleaningViewBind extends DeviceResolution {
     TextView toolname_id;
     RelativeLayout submit_btnid;
     TextView headername_tvid,note_tvid,tv_upload,tv_amount;
+    EditText etn_note;
     LinearLayout lv_attachmentone;
 
 
@@ -41,5 +43,6 @@ public class UserCleaningViewBind extends DeviceResolution {
         tv_upload=view.findViewById(R.id.tv_upload);
         tv_amount=view.findViewById(R.id.tv_amount);
         lv_attachmentone=view.findViewById(R.id.lv_attachmentone);
+        etn_note=view.findViewById(R.id.etn_note);
     }
 }

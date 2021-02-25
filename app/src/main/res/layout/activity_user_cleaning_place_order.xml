@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Name"
+                android:text="@string/Note"
                 android:textColor="@color/text_color_light_blak"
                 android:fontFamily="@font/rajdhanibold"
                 android:paddingBottom="@dimen/_3sdp">
@@ -37,9 +37,10 @@
             </TextView>
 
             <TextView
+                android:id="@+id/tv_note"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/cleaning_name"
+                android:text=""
                 android:textColor="@color/text_color_light_blak"
                 android:fontFamily="@font/rajdhanimedium"
                 android:paddingBottom="@dimen/_10sdp">
@@ -81,6 +82,7 @@
 
             </LinearLayout>
 
+<!--
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -115,7 +117,8 @@
                 </TextView>
 
             </LinearLayout>
-            <LinearLayout
+-->
+        <!--    <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_5sdp">
@@ -148,7 +151,7 @@
 
                 </TextView>
 
-            </LinearLayout>
+            </LinearLayout>-->
 
 
 
@@ -201,6 +204,7 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/tv_service_charge"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="500"
@@ -228,6 +232,7 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/tv_GST"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="20"
@@ -263,6 +268,7 @@
                     </TextView>
 
                     <TextView
+                        android:id="@+id/tv_tamount"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="\u20B9 520"
@@ -285,13 +291,14 @@
                 android:gravity="center">
 
                 <LinearLayout
-                    android:layout_width="@dimen/_130sdp"
 
+                    android:layout_width="@dimen/_130sdp"
                     android:layout_height="@dimen/_45sdp"
                     android:background="@drawable/submitbg"
                     android:layout_marginRight="@dimen/_5sdp">
 
                     <TextView
+                        android:id="@+id/tv_place_order"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="@dimen/_4sdp"

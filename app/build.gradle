@@ -30,6 +30,11 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
+
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -50,6 +55,8 @@ dependencies {
 
 
     implementation 'com.karumi:dexter:5.0.0'
+
+    implementation 'com.razorpay:checkout:1.6.5'
 
 
 

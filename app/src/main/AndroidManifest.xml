@@ -27,6 +27,7 @@
         <activity android:name=".screen.UserCongratulationAcitivity.UserCongratulationActivity" />
         <activity android:name=".screen.UserHouseHoldActivity.UserHouseHoldActivity" />
         <activity android:name=".screen.UserDashboardActivity.UserDashboardActivity">
+
         </activity>
         <activity android:name=".screen.UserThankYouActivity.UserThankYouActivity" />
         <activity android:name=".screen.Splash.SplashActivity">

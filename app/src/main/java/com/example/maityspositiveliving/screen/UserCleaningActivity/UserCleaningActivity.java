@@ -28,6 +28,7 @@ import com.example.maityspositiveliving.R;
 import com.example.maityspositiveliving.Retrofit.interfaces.OnCallBackListner;
 import com.example.maityspositiveliving.Retrofit.models.ApiRequest;
 import com.example.maityspositiveliving.Retrofit.models.PART;
+import com.example.maityspositiveliving.screen.UserCleaningPlaceOrderActivity.UserCleaningPlaceOrderActivity;
 import com.example.maityspositiveliving.utils.ApplicationConstant;
 import com.example.maityspositiveliving.utils.FileUtils;
 import com.example.maityspositiveliving.utils.MyToast;
@@ -86,7 +87,7 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
 
         apiRequest=new ApiRequest(UserCleaningActivity.this,this);
        userCleaningViewBind. headername_tvid.setText("CLEANING");
-       userCleaningViewBind.tv_amount.setText("\u20B9"+  amount);
+      // userCleaningViewBind.tv_amount.setText("\u20B9"+  amount);
 
 
     }
@@ -99,62 +100,6 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
             super.onBackPressed();
         }
     }
-
-
-   /* public void showFileChooser(int code) {
-
-        Intent intent = Utility.getCustomFileChooserIntent(IMAGE, PDF);
-
-
-        try {
-            startActivityForResult(Intent.createChooser(intent, "Select Your .pdf File"), code);
-        } catch (ActivityNotFoundException e) {
-            Toast.makeText(this, "Please Install a File Manager", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-
-        if (resultCode == RESULT_OK && data != null) {
-
-            file = null;
-
-            try {
-                String fullPath = FileUtils.getPath(this, data.getData());
-                file = new File(fullPath);
-
-                userCleaningViewBind.lv_attachmentone.setVisibility(View.VISIBLE);
-                Toast.makeText(this, ""+file, Toast.LENGTH_SHORT).show();
-
-            } catch (Exception exception) {
-                file = null;
-                ToastUtils.showLong(this,"This file is not supported because it's a temp file " +
-                        "please choose from " +
-                        "different folder",true);
-
-
-                return;
-            }
-
-
-            if (requestCode == CODE_IMAGE_PDF) {
-
-
-
-                // if (file != null) callApiforUploadDocument(file, "Matric");
-
-
-            }
-
-
-        }
-
-        super.onActivityResult(requestCode, resultCode, data);  // You MUST have this line to be here
-        // so ImagePicker can work with fragment mode
-
-    }
-*/
 
 
     public void showPictureDialog(){
@@ -211,21 +156,6 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
 
             file = null;
 
-          /*  try {
-                String fullPath = FileUtils.getPath(this, data.getData());
-                file = new File(fullPath);
-                Toast.makeText(this, ""+file, Toast.LENGTH_SHORT).show();
-                userCleaningViewBind.lv_attachmentone.setVisibility(View.VISIBLE);
-            } catch (Exception exception) {
-                file = null;
-                Toast.makeText(UserCleaningActivity.this,"This file is not supported because it's a temp file " +
-                        "please choose from " +
-                        "different folder",Toast.LENGTH_LONG);
-
-
-                return;
-            }
-*/
 
             switch (requestCode){
 
@@ -430,6 +360,7 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
         return count;
     }
 
+/*
     private void  requestMultiplePermissions(){
         Dexter.withActivity(this)
                 .withPermissions(
@@ -467,6 +398,7 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
                 .onSameThread()
                 .check();
     }
+*/
 
 
 
@@ -485,10 +417,16 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
      //  Log.d("sunta", "apiForOrderApi: "+hashMap);
 
       // apiRequest.callPOST(ApplicationConstant.OrderApi_url,hashMap,"OrderApi");
-  if (file==null){
-      MyToast.show(UserCleaningActivity.this,"please  Select image or PDF",true);
+  if (userCleaningViewBind.etn_note.getText().toString().isEmpty()){
+      MyToast.show(UserCleaningActivity.this,"please enter note",true);
 
-  }else {
+  }
+  else if (file==null){
+
+      MyToast.show(UserCleaningActivity.this," please  Select image or PDF",true);
+
+  }else
+  {
 
       apiRequest.callFileUpload(ApplicationConstant.OrderApi_url, hashMap, new PART("pdf_file", file), "OrderApi");
   }
@@ -504,7 +442,10 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
                 jsonObject1.getString("success");
 
                 MyToast.show(UserCleaningActivity.this, "" + jsonObject1.getString("success"), true);
-
+             Intent intent=new Intent(UserCleaningActivity.this, UserCleaningPlaceOrderActivity.class);
+             intent.putExtra("note",userCleaningViewBind.etn_note.getText().toString());
+             intent.putExtra("amount",amount);
+             startActivity(intent);
 
             } catch (JSONException e) {
                 e.printStackTrace();

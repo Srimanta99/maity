@@ -181,7 +181,7 @@
                    android:layout_height="match_parent"
                    android:gravity="left|center"
                    android:layout_gravity="center|left"
-                   android:text="\u20B9 2,750"
+                   android:text="\u20B9 0"
                    android:textColor="@color/white"
                    android:fontFamily="@font/rajdhanibold"
                    android:textSize="@dimen/_18sdp"
@@ -235,6 +235,7 @@
                 </TextView>
 
                 <EditText
+                    android:id="@+id/etn_note"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/sky_capsul_bg"
