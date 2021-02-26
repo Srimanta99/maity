@@ -20,7 +20,7 @@ public class UserDashboardViewBind extends DeviceResolution {
     DrawerLayout drawer;
      ImageView editid;
     NavigationView navigationView;
-    TextView dashboard_tvid;
+    TextView dashboard_tvid,tv_logout;
 
     public UserDashboardViewBind(UserDashboardActivity userDashboardActivity, View view) {
         super(userDashboardActivity);
@@ -47,6 +47,7 @@ public class UserDashboardViewBind extends DeviceResolution {
         settingsid=view.findViewById(R.id.settingsid);
         editid=view.findViewById(R.id.editid);
         dashboard_tvid=view.findViewById(R.id.dashboard_tvid);
+        tv_logout=view.findViewById(R.id.tv_logout);
 
     }
 }

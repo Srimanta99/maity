@@ -169,28 +169,38 @@ public class UserStepThreeRegistrationActivity extends AppCompatActivity impleme
       else   if (tag.equalsIgnoreCase("Register")){
             try {
                 JSONObject jsonObject=new JSONObject(body);
+              String status=  jsonObject.getString("status");
+
+
                 JSONObject jsonObject1=jsonObject.getJSONObject("messages");
 
-                SessionManager.setnamevalue(RegistrationConstant.NAME);
-                SessionManager.setemailidvalue(RegistrationConstant.EMAIL_ID);
-                SessionManager.setphnovalue(RegistrationConstant.MOBILE_NUMBER);
-                SessionManager.setDOBvalue(RegistrationConstant.DOB);
-                SessionManager.setGendervalue(RegistrationConstant.GENDER);
-                SessionManager.setcustomar_countryvalue("1");
-                SessionManager.setSelectStatevalue(RegistrationConstant.STATE);
-                SessionManager.setSelectCityvalue(RegistrationConstant.CITY_NAME);
-                SessionManager.setAddressvalue(RegistrationConstant.ADDRESS);
-                SessionManager.setPinNovalue(RegistrationConstant.PIN);
-                SessionManager.setPassword("12345");
-                SessionManager.setcPassword("12345");
-                MyToast.show(UserStepThreeRegistrationActivity.this,""+jsonObject1.getString("success"),true);
+                if (status.equalsIgnoreCase("1")){
+                    SessionManager.setnamevalue(RegistrationConstant.NAME);
+                    SessionManager.setemailidvalue(RegistrationConstant.EMAIL_ID);
+                    SessionManager.setphnovalue(RegistrationConstant.MOBILE_NUMBER);
+                    SessionManager.setDOBvalue(RegistrationConstant.DOB);
+                    SessionManager.setGendervalue(RegistrationConstant.GENDER);
+                    SessionManager.setcustomar_countryvalue("1");
+                    SessionManager.setSelectStatevalue(RegistrationConstant.STATE);
+                    SessionManager.setSelectCityvalue(RegistrationConstant.CITY_NAME);
+                    SessionManager.setAddressvalue(RegistrationConstant.ADDRESS);
+                    SessionManager.setPinNovalue(RegistrationConstant.PIN);
+                    SessionManager.setPassword("12345");
+                    SessionManager.setcPassword("12345");
+                    MyToast.show(UserStepThreeRegistrationActivity.this,""+jsonObject1.getString("success"),true);
+
+                    SessionManager.setLogged(true);
+                    Intent mainIntent = new Intent(UserStepThreeRegistrationActivity.this, UserThankYouActivity.class).addFlags(
+                            Intent.FLAG_ACTIVITY_CLEAR_TASK |
+                                    Intent.FLAG_ACTIVITY_CLEAR_TOP
+                    );
+                    startActivity(mainIntent);
+                }else {
+                    MyToast.show(UserStepThreeRegistrationActivity.this,"User already exists,please use a different email address",true);
+
+                }
 
 
-                Intent mainIntent = new Intent(UserStepThreeRegistrationActivity.this, UserThankYouActivity.class).addFlags(
-                        Intent.FLAG_ACTIVITY_CLEAR_TASK |
-                                Intent.FLAG_ACTIVITY_CLEAR_TOP
-                );
-                startActivity(mainIntent);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -202,6 +212,7 @@ public class UserStepThreeRegistrationActivity extends AppCompatActivity impleme
 
     @Override
     public void OnCallBackError(String tag, String error, int i) {
+
 
     }
 

@@ -66,6 +66,7 @@
                         android:layout_height="wrap_content"
                         android:text="@string/name"
                         android:fontFamily="@font/rajdhanimedium"
+                        android:textSize="@dimen/_16sdp"
                         android:textColor="@color/text_color_blue">
 
                     </TextView>
@@ -75,11 +76,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_40sdp"
                         android:background="@drawable/asscolor_round"
-                        android:inputType="text"
+                        android:inputType="text|textNoSuggestions"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
                         android:textColor="@color/text_color_light_blak"
                         android:textSize="@dimen/_12sdp"
                         android:fontFamily="@font/rajdhanimedium"
-                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_14sdp"
                         android:layout_marginTop="@dimen/_4sdp"
                         android:paddingLeft="@dimen/_10sdp"
                         >
@@ -89,6 +91,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/Email"
+                        android:textSize="@dimen/_16sdp"
                         android:fontFamily="@font/rajdhanimedium"
                         android:textColor="@color/text_color_blue"
                         >
@@ -123,19 +126,18 @@
                 android:layout_height="@dimen/_45sdp"
                 android:background="@drawable/nexttext"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/_218sdp"
+                android:layout_marginTop="@dimen/_235sdp"
                 >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="@string/Next"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_22sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
                     android:fontFamily="@font/rajdhanibold"
                     android:gravity="center"
-                    android:layout_marginBottom="@dimen/_4sdp"
-                    >
+                    android:text="@string/Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp">
 
                 </TextView>
 

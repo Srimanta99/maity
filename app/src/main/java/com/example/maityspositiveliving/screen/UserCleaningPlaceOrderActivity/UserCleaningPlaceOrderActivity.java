@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -12,18 +13,32 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.maityspositiveliving.R;
+import com.example.maityspositiveliving.Retrofit.interfaces.OnCallBackListner;
+import com.example.maityspositiveliving.Retrofit.models.ApiRequest;
+import com.example.maityspositiveliving.screen.UserCleaningActivity.UserCleaningActivity;
+import com.example.maityspositiveliving.screen.UserCongratulationAcitivity.UserCongratulationActivity;
+import com.example.maityspositiveliving.utils.ApplicationConstant;
+import com.example.maityspositiveliving.utils.MyToast;
 import com.razorpay.Checkout;
+import com.razorpay.PaymentData;
 import com.razorpay.PaymentResultListener;
+import com.razorpay.PaymentResultWithDataListener;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
-public class UserCleaningPlaceOrderActivity extends AppCompatActivity implements PaymentResultListener {
+import java.util.HashMap;
+
+public class UserCleaningPlaceOrderActivity extends AppCompatActivity implements PaymentResultWithDataListener, OnCallBackListner {
     public static final String TAG=UserCleaningPlaceOrderActivity.class.getSimpleName();
+
+    ApiRequest request;
+
 
     TextView headername_tvid,tv_service_charge,tv_GST,tv_tamount,tv_place_order,tv_note;
     int tAmount;
     RelativeLayout back_icon;
-    String amount,note;
+    String amount,note,razorpay_order_id,razorpay_signature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +57,7 @@ public class UserCleaningPlaceOrderActivity extends AppCompatActivity implements
 
         amount=   getIntent().getStringExtra("amount");
         note=   getIntent().getStringExtra("note");
+        razorpay_order_id=getIntent().getStringExtra("razorpay_order_id");
 
          tv_note.setText(note);
 
@@ -55,6 +71,10 @@ public class UserCleaningPlaceOrderActivity extends AppCompatActivity implements
 
         tv_tamount.setText("\u20B9"+String.valueOf(tAmount));
         tAmount  =Math.round(Float.parseFloat(String.valueOf(tAmount))*100);
+
+
+        request=new ApiRequest(this,this);
+
 
 
         back_icon.setOnClickListener(new View.OnClickListener() {
@@ -109,7 +129,7 @@ public class UserCleaningPlaceOrderActivity extends AppCompatActivity implements
             options.put("name", "Merchant Name");
             options.put("description", "Reference No. #123456");
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.png");
-            //   options.put("order_id", "order_DBJOWzybf0sJbb");//from response of step 3.
+            options.put("order_id", razorpay_order_id);//from response of step 3.
             options.put("theme.color", "#3399cc");
             options.put("currency", "INR");
             options.put("amount", tAmount);//pass amount in currency subunits
@@ -121,16 +141,61 @@ public class UserCleaningPlaceOrderActivity extends AppCompatActivity implements
         }
     }
 
+
+
+
     @Override
-    public void onPaymentSuccess(String s) {
-        AlertDialog.Builder builder=new AlertDialog.Builder(this);
-        builder.setMessage(s);
-        builder.show();
+    public void onPaymentSuccess(String s, PaymentData paymentData) {
+
+
+        Log.d("sunitaaaa", "razorpay_payment_id: "+s);
+        Log.d("sunitaaaa", "razorpay_order_id: "+razorpay_order_id);
+        Log.d("sunitaaaa", "razorpay_signature: "+paymentData.getSignature());
+        razorpay_signature=  paymentData.getSignature();
+
+        apiForpaymentverify(razorpay_order_id,s,razorpay_signature);
+
+    }
+
+
+    @Override
+    public void onPaymentError(int i, String s, PaymentData paymentData) {
+        Toast.makeText(this, ""+s, Toast.LENGTH_SHORT).show();
+
+    }
+
+
+    public  void apiForpaymentverify(String razorpay_order_id,String razorpay_payment_id,String razorpay_signature){
+        HashMap<String,String> hashMap=new HashMap<>();
+        hashMap.put("order_id", "1");
+        hashMap.put("razorpay_order_id",razorpay_order_id);
+        hashMap.put("razorpay_payment_id",razorpay_payment_id);
+        hashMap.put("razorpay_signature",razorpay_signature);
+
+
+        request.callPOST(ApplicationConstant.paymentverify_url,hashMap,"paymentverify");
+
+
     }
 
     @Override
-    public void onPaymentError(int i, String s) {
-        Toast.makeText(this, ""+s, Toast.LENGTH_SHORT).show();
+    public void OnCallBackSuccess(String tag, String body) {
+        if (tag.equalsIgnoreCase("paymentverify")){
+            try {
+                JSONObject jsonObject=new JSONObject(body);
+                MyToast.show(this,""+jsonObject.getString("_message"),true);
+
+
+                Intent intent=new Intent(UserCleaningPlaceOrderActivity.this, UserCongratulationActivity.class);
+                startActivity(intent);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void OnCallBackError(String tag, String error, int i) {
 
     }
 }

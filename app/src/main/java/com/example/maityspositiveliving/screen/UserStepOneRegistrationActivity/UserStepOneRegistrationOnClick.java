@@ -44,6 +44,9 @@ public class UserStepOneRegistrationOnClick implements View.OnClickListener {
                 }else if (RegistrationConstant.EMAIL_ID.isEmpty()){
                     MyToast.show(userStepOneRegistrationActivity,"please Enter Your Email id",true);
 
+                }else if (!userStepOneRegistrationActivity. isValidEmailId(userStepOneRegistrationViewBind.etn_emailid.getText().toString().trim())){
+                    MyToast.show(userStepOneRegistrationActivity,"InValid Email Address.",true);
+
                 }
                 else {
                     Intent mainIntent = new Intent(userStepOneRegistrationActivity, UserStepTwoRegistrationActivity.class);

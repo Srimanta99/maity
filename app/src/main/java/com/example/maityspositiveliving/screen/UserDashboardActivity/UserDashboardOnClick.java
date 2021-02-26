@@ -1,5 +1,6 @@
 package com.example.maityspositiveliving.screen.UserDashboardActivity;
 
+import android.content.Intent;
 import android.view.Gravity;
 import android.view.View;
 
@@ -12,6 +13,8 @@ import com.example.maityspositiveliving.screen.Fragment.UserDeshBoardFragment.Us
 import com.example.maityspositiveliving.screen.Fragment.UserMyOrderFragment.UserMyOrderFragment;
 import com.example.maityspositiveliving.screen.Fragment.UserPaymentFragment.UserPaymentFragment;
 import com.example.maityspositiveliving.screen.Fragment.UserUpdateProfileFragment.UserUpdateProfileFragment;
+import com.example.maityspositiveliving.screen.UserStepOneRegistrationActivity.UserStepOneRegistrationActivity;
+import com.example.maityspositiveliving.utils.SessionManager;
 
 public class UserDashboardOnClick  implements View.OnClickListener{
     UserDashboardActivity userDashboardActivity;
@@ -35,6 +38,7 @@ public class UserDashboardOnClick  implements View.OnClickListener{
         userDashboardViewBind.myorderid.setOnClickListener(this);
         userDashboardViewBind.editid.setOnClickListener(this);
         userDashboardViewBind.menu_icon.setOnClickListener(this);
+        userDashboardViewBind.tv_logout.setOnClickListener(this);
 
     }
 
@@ -90,6 +94,13 @@ public class UserDashboardOnClick  implements View.OnClickListener{
 
             }
             break;
+
+            case R.id.tv_logout:{
+                SessionManager.setLogged(false);
+                Intent intent=new Intent(userDashboardActivity, UserStepOneRegistrationActivity.class);
+                userDashboardActivity.startActivity(intent);
+                userDashboardActivity.finish();
+            }
 
 
         }

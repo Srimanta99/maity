@@ -60,6 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/DOB"
+                    android:textSize="@dimen/_16sdp"
                     android:fontFamily="@font/rajdhanimedium"
                     android:textColor="@color/text_color_blue"
                     android:paddingLeft="@dimen/_15sdp">
@@ -115,6 +116,7 @@
                     android:text="@string/Gender"
                     android:textColor="@color/text_color_blue"
                     android:paddingLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/_16sdp"
                     android:fontFamily="@font/rajdhanimedium"
                     >
 
@@ -262,7 +264,7 @@
                 android:layout_height="@dimen/_45sdp"
                 android:background="@drawable/nexttext"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/_218sdp"
+                android:layout_marginTop="@dimen/_230sdp"
                 >
                 <TextView
                     android:layout_width="match_parent"

@@ -405,18 +405,23 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
 
 
     public void apiForOrderApi(){
+        int GST= Integer.valueOf(amount) * 18/100;
+      int  tAmount=Integer.valueOf(amount)+GST;
 
        HashMap<String,String> hashMap=new HashMap<>();
-       hashMap.put("categories_id", categories_id);
-       hashMap.put("customar_id","10");
-       hashMap.put("description",description);
-     //  hashMap.put("pdf_file", String.valueOf(file));
+       hashMap.put("category_id", categories_id);
+       hashMap.put("customer_id","10");
+       hashMap.put("customer_note",description);
+        hashMap.put("amount",amount);
 
-       hashMap.put("amount",amount);
+        hashMap.put("amount_total", String.valueOf(tAmount));
+
+
+        //  hashMap.put("pdf_file", String.valueOf(file));
+
 
      //  Log.d("sunta", "apiForOrderApi: "+hashMap);
 
-      // apiRequest.callPOST(ApplicationConstant.OrderApi_url,hashMap,"OrderApi");
   if (userCleaningViewBind.etn_note.getText().toString().isEmpty()){
       MyToast.show(UserCleaningActivity.this,"please enter note",true);
 
@@ -427,8 +432,7 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
 
   }else
   {
-
-      apiRequest.callFileUpload(ApplicationConstant.OrderApi_url, hashMap, new PART("pdf_file", file), "OrderApi");
+      apiRequest.callFileUpload(ApplicationConstant.OrderApi_url, hashMap, new PART("customer_file[]", file), "OrderApi");
   }
 
    }
@@ -438,15 +442,17 @@ public class UserCleaningActivity extends AppCompatActivity implements OnCallBac
         if (tag.equalsIgnoreCase("OrderApi")) {
             try {
                 JSONObject jsonObject = new JSONObject(body);
-                JSONObject jsonObject1 = jsonObject.getJSONObject("messages");
-                jsonObject1.getString("success");
+                MyToast.show(UserCleaningActivity.this, "" + jsonObject.getString("_message"), true);
+                JSONObject jsonObject1=jsonObject.getJSONObject("_data");
+                String   razorpay_order_id=  jsonObject1.getString("razorpay_order_id");
+                Log.d("sunita", "OnCallBackSuccess: "+ razorpay_order_id);
 
-                MyToast.show(UserCleaningActivity.this, "" + jsonObject1.getString("success"), true);
+
              Intent intent=new Intent(UserCleaningActivity.this, UserCleaningPlaceOrderActivity.class);
+             intent.putExtra("razorpay_order_id",razorpay_order_id);
              intent.putExtra("note",userCleaningViewBind.etn_note.getText().toString());
              intent.putExtra("amount",amount);
              startActivity(intent);
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }

@@ -17,8 +17,10 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.maityspositiveliving.R;
+import com.example.maityspositiveliving.screen.UserDashboardActivity.UserDashboardActivity;
 import com.example.maityspositiveliving.screen.main.MainActivity;
 import com.example.maityspositiveliving.utils.ApplicationConstant;
+import com.example.maityspositiveliving.utils.SessionManager;
 
 public class SplashActivity extends AppCompatActivity {
     SharedPreferences sharedpreferences;
@@ -30,8 +32,8 @@ public class SplashActivity extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        /*savelogin= SessionManager.isLogged();
-        saveCenterManagerlogin=SessionManager.isCenterManageLogged();
+        savelogin= SessionManager.getLogged();
+        /*saveCenterManagerlogin=SessionManager.isCenterManageLogged();
         saveTeacherlogin=SessionManager.isTeacherLogged();*/
 
         View view= LayoutInflater.from(this).inflate(R.layout.activity_splash,null);
@@ -41,50 +43,29 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent=new Intent(SplashActivity.this, MainActivity.class);
+            /*    Intent intent=new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
+*/
 
 
-               /* if (!saveCenterManagerlogin && !savelogin && !saveTeacherlogin){
+
+                if (!savelogin){
 
                     Intent intent=new Intent(SplashActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
-                    return;
 
-
-                } else if (saveCenterManagerlogin) {
-
-                    Intent intent = new Intent(SplashActivity.this, CenterManagerHomeActivity.class);
-                    startActivity(intent);
-                    finish();
-
-                    return;
                 }
-
-                *//*if (!savelogin){
-
-                    Intent intent=new Intent(SplashActivity.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-
-                }*//*
                 else   if (savelogin){
 
-                    Intent intent = new Intent(SplashActivity.this, StudentHomeActivity.class);
+                    Intent intent = new Intent(SplashActivity.this, UserDashboardActivity.class);
                     startActivity(intent);
                     finish();
                     return;
                 }
 
-                else   if (saveTeacherlogin){
 
-                    Intent intent = new Intent(SplashActivity.this, TeacherHomeActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-*/
 
             }
         }, ApplicationConstant.SPLASH_DISPLAY_LENGTH);

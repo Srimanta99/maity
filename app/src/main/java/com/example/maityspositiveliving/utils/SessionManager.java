@@ -17,10 +17,6 @@ public class SessionManager {
 
 
 
-    public static void setLogged(boolean is) {
-        editor.putBoolean("login", is);
-        editor.apply();
-    }
 
 
 
@@ -48,14 +44,15 @@ public class SessionManager {
 
 
 
-    public static void setidboolean(boolean is) {
-        editor.putBoolean("MyPREFERENCES", is);
+    public static void setLogged(boolean is) {
+        editor.putBoolean("login", is);
         editor.apply();
     }
 
 
-    public static boolean getidboolean() {
-        return preferences.getBoolean("MyPREFERENCES", false);
+    public static boolean getLogged() {
+
+        return preferences.getBoolean("login", false);
     }
 
 
