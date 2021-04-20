@@ -26,6 +26,7 @@
             </TextView>
 
             <ImageView
+                android:id="@+id/img_close"
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
                 android:layout_gravity="right"
@@ -97,6 +98,7 @@
                 android:paddingLeft="@dimen/_10sdp">
 
                 <TextView
+                    android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/_6sdp"
@@ -108,6 +110,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/tv_phno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+918777069940"
@@ -154,6 +157,7 @@
                 android:orientation="horizontal"
                 android:paddingTop="@dimen/_20sdp"
                 android:paddingBottom="@dimen/_15sdp"
+
                 >
 
                 <ImageView
@@ -256,7 +260,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Payments"
+                    android:text="My Wallet"
                     android:layout_marginLeft="@dimen/_5sdp"
                     android:textSize="@dimen/_16sdp"
                     android:fontFamily="@font/rajdhanimedium"

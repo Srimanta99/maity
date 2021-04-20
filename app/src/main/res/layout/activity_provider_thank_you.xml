@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserThankYouActivity.UserThankYouActivity"
+    android:background="@drawable/onlybg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/thankubg"
+                android:layout_marginBottom="@dimen/_20sdp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thanks for getting\nregistered with Maity's.\nWe will contact you soon."
+                    android:textColor="#fff"
+                    android:textSize="@dimen/_26sdp"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp">
+
+                </TextView>
+
+
+                <include
+                    layout="@layout/maityspositiveliving_icon_layout"
+                    ></include>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+                <RelativeLayout
+                    android:id="@+id/Back_id"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/nexttext"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Back"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_22sdp"
+                        android:fontFamily="@font/rajdhanibold"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+    </LinearLayout>
+
+</LinearLayout>

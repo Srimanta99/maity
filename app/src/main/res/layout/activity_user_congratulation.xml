@@ -56,9 +56,20 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Thank you for place\nthe order.\nOur service team\nwill contact you."
+                    android:text="Thank you for placing\nyour order"
                     android:textColor="#fff"
                     android:textSize="@dimen/_22sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:paddingTop="@dimen/_10sdp">
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our service team will contact you"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_15sdp"
                     android:gravity="center"
                     android:fontFamily="@font/rajdhanimedium"
                     android:paddingTop="@dimen/_10sdp">

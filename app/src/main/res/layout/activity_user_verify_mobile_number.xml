@@ -84,6 +84,7 @@
                         android:layout_marginRight="@dimen/_10sdp">
 
                         <EditText
+                            android:id="@+id/etotpno2id"
 
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_40sdp"
@@ -106,16 +107,17 @@
                         android:layout_marginRight="@dimen/_10sdp">
 
                         <EditText
+                            android:id="@+id/etotpno3id"
 
-                            android:layout_width="match_parent"
+                            android:layout_width="51dp"
                             android:layout_height="@dimen/_40sdp"
-                            android:background="@android:color/transparent"
-                            android:inputType="number"
-                            android:maxLength="1"
-                            android:fontFamily="@font/rajdhanimedium"
-
                             android:layout_gravity="center"
-                            android:gravity="center">
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:gravity="center"
+
+                            android:inputType="number"
+                            android:maxLength="1">
 
                         </EditText>
 
@@ -127,6 +129,7 @@
                         android:background="@drawable/asscolor_round">
 
                         <EditText
+                            android:id="@+id/etotpno4id"
 
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/_40sdp"
@@ -149,6 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_120sdp"
                 >
+
 
                 <LinearLayout
                     android:id="@+id/verifylvid"

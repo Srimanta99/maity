@@ -86,14 +86,17 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1">
-                            <Spinner
-                                android:id="@+id/select_state_spinnerid"
+                            <TextView
+                                android:id="@+id/tv_state"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:popupBackground="@drawable/blue_outline_white_background"
-                                android:background="@android:color/transparent">
+                                android:layout_gravity="center"
+                                android:gravity="center|left"
+                                android:textColor="@color/text_color_light_blak"
+                                android:paddingLeft="@dimen/_10sdp"
+                                >
 
-                            </Spinner>
+                            </TextView>
                         </LinearLayout>
 
                         <ImageView
@@ -130,14 +133,17 @@
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1">
-                            <Spinner
-                                android:id="@+id/select_city_spinnerid"
+                            <TextView
+                                android:id="@+id/tv_city"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:popupBackground="@drawable/blue_outline_white_background"
-                                android:background="@android:color/transparent">
+                                android:layout_gravity="center"
+                                android:gravity="center|left"
+                                android:textColor="@color/text_color_light_blak"
+                                android:paddingLeft="@dimen/_10sdp"
+                                >
 
-                            </Spinner>
+                            </TextView>
                         </LinearLayout>
 
                         <ImageView
@@ -219,7 +225,7 @@
                 android:layout_height="@dimen/_45sdp"
                 android:background="@drawable/nexttext"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/_360sdp"
+                android:layout_marginTop="@dimen/_370sdp"
                 >
 
                 <TextView

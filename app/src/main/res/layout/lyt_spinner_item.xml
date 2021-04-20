@@ -3,39 +3,53 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingStart="10dp"
     android:paddingTop="2dp"
-    android:paddingEnd="10dp"
+
     android:paddingBottom="2dp"
     android:orientation="vertical"
+
+
     >
 
-    <View
-        android:id="@+id/view"
+   <!-- <TextView
         android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:background="#C4D3D1D1"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginRight="@dimen/_10sdp"
-        ></View>
+        android:layout_height="wrap_content"
+        android:text="@string/SelectState"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/rajdhanibold"
+        android:textColor="@color/text_color_dark_blue">
+
+    </TextView>-->
+
+
 
     <TextView
-
         android:id="@+id/txt_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:maxLines="1"
         android:text="Spinner"
-        android:paddingLeft="@dimen/_10sdp"
-        android:paddingStart="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_12sdp"
+        android:paddingStart="@dimen/_12sdp"
         android:padding="10dp"
         android:textColor="@color/black"
         android:textSize="@dimen/_12sdp"
         android:fontFamily="@font/rajdhanimedium"
         />
 
-
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C4D3D1D1"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        ></View>
 
 
 </LinearLayout>

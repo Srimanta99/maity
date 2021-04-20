@@ -8,7 +8,7 @@
     <LinearLayout
         android:id="@+id/lv_id"
         android:layout_width="0dp"
-        android:layout_height="@dimen/_110sdp"
+        android:layout_height="@dimen/_125sdp"
         android:layout_weight="1"
         android:background="@drawable/shapebg"
         android:orientation="vertical"
@@ -33,6 +33,7 @@
             android:paddingLeft="@dimen/_10sdp"
             android:fontFamily="@font/rajdhanimedium"
             android:gravity="top"
+            android:textSize="@dimen/_16sdp"
             android:textColor="@color/white"
             >
 

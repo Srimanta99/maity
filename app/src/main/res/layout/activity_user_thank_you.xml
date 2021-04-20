@@ -38,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:text="Thank You\nfor getting registered\nWith"
                     android:textColor="#fff"
-                    android:textSize="@dimen/_30sdp"
+                    android:textSize="@dimen/_26sdp"
                     android:fontFamily="@font/rajdhanimedium"
                     android:gravity="center"
                     android:paddingTop="@dimen/_10sdp">

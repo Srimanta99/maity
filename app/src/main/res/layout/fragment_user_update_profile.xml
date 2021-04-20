@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".screen.Fragment.UserUpdateProfileFragment"
+
     android:orientation="vertical"
     android:background="@drawable/skybg">
 
@@ -26,19 +26,19 @@
 
         </TextView>
 
-        <EditText
+        <TextView
             android:id="@+id/etn_nameid"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/edit_text_bg"
-            android:inputType="text"
             android:textSize="@dimen/_12sdp"
+            android:gravity="center|left"
             android:layout_marginBottom="@dimen/_10sdp"
             android:paddingLeft="@dimen/_10sdp"
             android:fontFamily="@font/rajdhanimedium"
 
             >
-        </EditText>
+        </TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -50,19 +50,20 @@
 
         </TextView>
 
-        <EditText
+        <TextView
             android:id="@+id/etn_emailid"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/edit_text_bg"
             android:inputType="textEmailAddress"
             android:textSize="@dimen/_12sdp"
+            android:gravity="center|left"
             android:layout_marginBottom="@dimen/_10sdp"
             android:paddingLeft="@dimen/_10sdp"
             android:fontFamily="@font/rajdhanimedium"
 
             >
-        </EditText>
+        </TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -74,18 +75,19 @@
 
         </TextView>
 
-        <EditText
+        <TextView
             android:id="@+id/etn_mobnoid"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/edit_text_bg"
             android:inputType="number"
+            android:gravity="center|left"
             android:textSize="@dimen/_12sdp"
             android:paddingLeft="@dimen/_10sdp"
             android:fontFamily="@font/rajdhanimedium"
 
             >
-        </EditText>
+        </TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -110,19 +112,20 @@
 
         </TextView>
 
-        <EditText
+        <TextView
             android:id="@+id/etn_currentpasswordid"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:background="@drawable/edit_text_bg"
             android:inputType="textPassword"
             android:textSize="@dimen/_12sdp"
+            android:gravity="center|left"
             android:layout_marginBottom="@dimen/_10sdp"
             android:paddingLeft="@dimen/_10sdp"
             android:fontFamily="@font/rajdhanimedium"
 
             >
-        </EditText>
+        </TextView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

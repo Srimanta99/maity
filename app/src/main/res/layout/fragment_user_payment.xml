@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/skybg"
     android:orientation="vertical"
-    tools:context=".screen.Fragment.UserPaymentFragment.UserPaymentFragment">
+    tools:context=".screen.Fragment.UserMyWalletFragment.UserMyWalletFragment">
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -32,9 +32,10 @@
         </TextView>
 
         <TextView
+            android:id="@+id/tv_customer_wallet_balance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="\u20B9 2,750"
+            android:text="\u20B9 0"
             android:textSize="@dimen/_40sdp"
             android:textColor="@color/white"
             android:fontFamily="@font/rajdhanibold"
@@ -67,6 +68,7 @@
 
     </RelativeLayout>
 </RelativeLayout>
+<!--
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -345,7 +347,7 @@
 
                 </LinearLayout>
 
-             <!--   <LinearLayout
+             &lt;!&ndash;   <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.1"
@@ -396,7 +398,7 @@
 
 
 
-                </LinearLayout>-->
+                </LinearLayout>&ndash;&gt;
 
 
 
@@ -862,7 +864,87 @@
 
 
     </LinearLayout>
+-->
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enteramount"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textSize="@dimen/_13sdp"
+
+                android:fontFamily="@font/rajdhanimedium"
+                android:textColor="@color/text_color_light_blak"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etn_amount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/sky_capsul_bg"
+                android:textStyle="normal"
+                android:fontFamily="@font/rajdhanimedium"
+                android:textSize="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_9sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:inputType="number"
+                >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
 
 
+
+            <RelativeLayout
+                android:id="@+id/submit_btnid"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:background="@drawable/next"
+
+
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
 
 </LinearLayout>

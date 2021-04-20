@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserEnterMobileNumberActivity.UserMobileNumberActivity"
+    android:background="@drawable/onlybg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/maityspositiveliving_icon_layout"
+        ></include>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgshape"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bluecapsulshapebutton"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="@string/Entermobile"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                </TextView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:background="@drawable/asscolor_round"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="  +91"
+                            android:textColor="@color/text_color_light_blak"
+                            android:gravity="center"
+                            android:textSize="@dimen/_18sdp"
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:drawableLeft="@drawable/ic_india"
+                            android:paddingRight="@dimen/_10sdp"
+                            ></TextView>
+
+
+                        <!-- <Spinner
+                             android:id="@+id/spinner_country_code"
+                             android:layout_width="wrap_content"
+                             android:layout_height="@dimen/_40sdp"
+                             android:background="@android:color/transparent"
+                             android:popupBackground="@drawable/blue_outline_white_background"
+                             >
+                         </Spinner>
+                         <LinearLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_gravity="right"
+                             android:gravity="right">
+                             <ImageView
+                                 android:id="@+id/img_state"
+                                 android:layout_width="@dimen/_15sdp"
+                                 android:layout_height="match_parent"
+                                 android:src="@drawable/arrow"
+                                 android:layout_marginRight="@dimen/_5sdp"
+                                 >
+
+                             </ImageView>
+                         </LinearLayout>-->
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/asscolor_round">
+
+                        <EditText
+                            android:id="@+id/etn_mobno"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:background="@android:color/transparent"
+                            android:textStyle="normal"
+                            android:textSize="@dimen/_18sdp"
+                            android:digits="0123456789"
+
+                            android:imeOptions="actionDone"
+                            android:textColor="@color/text_color_light_blak"
+                            android:gravity="center|left"
+                            android:layout_gravity="center"
+                            android:paddingLeft="@dimen/_9sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:inputType="phone"
+                            android:singleLine="true"
+                            android:lines="1"
+                            >
+
+                        </EditText>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="@string/Enterpassword"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:paddingBottom="@dimen/_10sdp">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/asscolor_round"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etn_password"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:textStyle="normal"
+                                android:fontFamily="@font/rajdhanimedium"
+                                android:textSize="14sp"
+                                android:imeOptions="actionDone"
+                                android:gravity="center|left"
+                                android:layout_gravity="center"
+                                android:paddingLeft="@dimen/_9sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:inputType="textPassword"
+                                android:singleLine="true"
+                                android:lines="1"
+                                >
+                            </EditText>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:layout_height="match_parent"
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/show_pass_id"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:padding="@dimen/_12sdp"
+                                android:src="@drawable/hidepassword"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="@string/Defaultpassword"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                   >
+
+                </TextView>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_35sdp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_button_color"
+        android:text="Note : "
+        android:fontFamily="@font/rajdhanimedium"
+        android:textSize="@dimen/_13sdp"
+
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/tv_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please update your default password from my profile section"
+        android:textColor="#fff"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/rajdhanimedium"
+     >
+
+    </TextView>
+</LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/loginid"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/submitbg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_265sdp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/Login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

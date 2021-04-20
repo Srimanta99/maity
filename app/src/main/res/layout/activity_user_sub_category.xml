@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.UserSubCategoryActivity.UserSubCategoryActivity"
+    android:orientation="vertical"
+    android:background="@drawable/onlybg">
+
+    <include
+        layout="@layout/backbtn_wthbg_layout"
+        ></include>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/skybg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/note_tvid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="@font/productsansregular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#0288D1">
+
+            </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/light_bluecapsul_bg"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:background="@drawable/cleaningbg">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Name"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textColor="@color/text_color_dark_blue">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Number :"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textColor="@color/text_color_dark_blue"
+                        android:paddingTop="@dimen/_5sdp">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email Id :"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textColor="@color/text_color_dark_blue"
+                        android:paddingTop="@dimen/_5sdp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Address"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textColor="@color/text_color_dark_blue"
+                        android:paddingTop="@dimen/_5sdp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Priyam Ghosh"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:fontFamily="@font/rajdhanimedium"
+                        android:textColor="@color/text_color_dark_blue"
+                       >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_phno"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+91 8777069940"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:fontFamily="@font/rajdhanimedium"
+                        android:textColor="@color/text_color_dark_blue"
+                        android:paddingTop="@dimen/_8sdp">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tv_email"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+91 8777069940"
+                        android:textSize="@dimen/_13sdp"
+
+                        android:fontFamily="@font/rajdhanimedium"
+                        android:textColor="@color/text_color_dark_blue"
+                        android:paddingTop="@dimen/_7sdp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_address"
+
+                        android:layout_width="match_parent"
+                        android:textSize="@dimen/_13sdp"
+                        android:layout_height="wrap_content"
+                        android:text="E-42,Baghajatin,\n(Near Ramthakur Ashram)"
+                        android:fontFamily="@font/rajdhanimedium"
+                        android:textColor="@color/text_color_dark_blue"
+                        android:paddingTop="@dimen/_5sdp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.3">
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+               <ImageView
+                   android:layout_width="25dp"
+                   android:layout_height="@dimen/_18sdp"
+                   android:src="@drawable/wallet"
+                   android:scaleType="fitXY"
+                   android:gravity="left|center"
+                   android:layout_gravity="center|left"
+                   >
+               </ImageView>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:text="Wallet Balance"
+                   android:textColor="@color/white"
+                   android:fontFamily="@font/rajdhanimedium"
+                   android:paddingLeft="@dimen/_5sdp"
+                   android:paddingRight="@dimen/_5sdp"
+                   android:gravity="left|center"
+                   android:textSize="@dimen/_13sdp"
+
+                   android:layout_gravity="center|left"
+                   >
+
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/tv_amount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:gravity="left|center"
+                   android:layout_gravity="center|left"
+                   android:text="\u20B9 0"
+                   android:textColor="@color/white"
+                   android:fontFamily="@font/rajdhanibold"
+                   android:textSize="@dimen/_18sdp"
+                   android:paddingLeft="@dimen/_5sdp"
+                   android:paddingRight="@dimen/_5sdp">
+
+
+               </TextView>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.3">
+
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:background="@drawable/white_bg"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Note"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:textSize="@dimen/_13sdp"
+
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:textColor="@color/text_color_light_blak"
+                    >
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/etn_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sky_capsul_bg"
+                    android:textStyle="normal"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_9sdp"
+                    android:paddingRight="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:minLines="4"
+                    android:gravity="top|left"
+
+                    android:maxLines="10"
+                    android:scrollbars="vertical"
+                    >
+
+                </EditText>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Uploadyourrequirement"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:textColor="@color/text_color_light_blak"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    >
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/sky_capsul_bg"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/address_etnid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:inputType="text"
+                            android:backgroundTint="@android:color/transparent"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:hint="@string/BrowseImagePDF"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_weight="0.5">
+                        <TextView
+                            android:id="@+id/tv_upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bluecapsulshapebutton"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/rajdhanimedium"
+                            android:text="@string/Upload"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+              <LinearLayout
+                  android:id="@+id/lv_attachmentone"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:visibility="visible">
+
+                  <!--<ImageView
+                      android:layout_width="25dp"
+                      android:layout_height="@dimen/_18sdp"
+                      android:src="@drawable/att"
+                      android:scaleType="fitXY"
+                      >
+                  </ImageView>
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Attachmentone"
+                      android:layout_marginLeft="@dimen/_10sdp"
+                      android:layout_gravity="center"
+                      android:gravity="center">
+
+                  </TextView>-->
+
+                  </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+              >
+
+
+
+                <RelativeLayout
+                    android:id="@+id/submit_btnid"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_48sdp"
+                    android:background="@drawable/submitbg"
+
+
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_4sdp"
+
+                        android:fontFamily="@font/rajdhanibold"
+                        android:gravity="center"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_22sdp">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

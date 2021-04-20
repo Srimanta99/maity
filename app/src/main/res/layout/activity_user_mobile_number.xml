@@ -16,7 +16,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@drawable/bgshape"
         android:layout_marginTop="@dimen/_15sdp"
         android:orientation="vertical">
@@ -129,6 +129,8 @@
                             android:background="@android:color/transparent"
                             android:textStyle="normal"
                             android:textSize="@dimen/_18sdp"
+                            android:digits="0123456789"
+
                             android:imeOptions="actionDone"
                             android:textColor="@color/text_color_light_blak"
                             android:gravity="center|left"
@@ -173,6 +175,89 @@
             </RelativeLayout>
 
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/lv_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Alreadyanuser"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="@font/rajdhanimedium"
+                    android:textSize="@dimen/_14sdp"
+
+                    >
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Please "
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textSize="@dimen/_16sdp"
+                        >
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:id="@+id/login_underline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:textColor="@color/yellow"
+                            android:text="@string/login"
+                            android:fontFamily="@font/rajdhanibold"
+                            android:textSize="@dimen/_16sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="5dp"
+                            android:layerType="software"
+                            android:src="@drawable/dashed_line" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" from here."
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_horizontal"
+                        android:fontFamily="@font/rajdhanibold"
+                        android:textSize="@dimen/_16sdp"
+                        >
+
+                    </TextView>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 

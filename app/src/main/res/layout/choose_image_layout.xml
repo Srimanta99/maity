@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+
+   >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/logoo"
+            >
+
+        </ImageView>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Chooseimagefrom"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/text_color_light_blak"
+        android:fontFamily="@font/rajdhanibold"
+        android:textSize="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_25sdp">
+
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lv_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/blue_bg"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/gallery"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Selectgallery"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rajdhanibold"
+                android:textSize="@dimen/_12sdp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lv_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/deep_grey_bg"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/cameraaa"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Capturecamera"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rajdhanibold"
+                android:textSize="@dimen/_12sdp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lv_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/red_bg"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/pdf"
+                android:layout_gravity="right|center"
+                android:layout_marginLeft="@dimen/_15sdp"
+
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/UploadPDF"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/rajdhanibold"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_cencel"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Cancel"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/light_sky_bg"
+        android:textColor="@color/text_color_light_blak"
+        android:fontFamily="@font/rajdhanibold"
+        android:textSize="@dimen/_14sdp"
+       android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        >
+
+    </TextView>
+
+</LinearLayout>

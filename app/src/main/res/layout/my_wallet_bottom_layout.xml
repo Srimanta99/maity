@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_bg"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enteramount"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textSize="@dimen/_13sdp"
+
+                android:fontFamily="@font/rajdhanimedium"
+                android:textColor="@color/text_color_light_blak"
+                >
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/etn_amount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/sky_capsul_bg"
+                android:textStyle="normal"
+                android:fontFamily="@font/rajdhanimedium"
+                android:textSize="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+
+                android:inputType="number"
+                >
+
+            </EditText>
+        </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/submit_btnid"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:background="@drawable/next"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_90sdp"
+                android:layout_marginBottom="@dimen/_90sdp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:fontFamily="@font/rajdhanibold"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_22sdp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -12,6 +12,12 @@
 
     <color name="text_color_dark_blue">#0F297E</color>
     <color name="text_color_light_blak">#323545</color>
+    <color name="text_color_sky">#267EFD</color>
     <color name="sky_bg">#bdd4fe</color>
     <color name="view_color_nav">#83AEFB</color>
+    <color name="yellow">#FFD700</color>
+    <color name="green">#32CD32</color>
+    <color name="red_button_color">#FE0100</color>
+    <color name="red_color">#F33939</color>
+    <color name="login_bg_header">#032c71</color>
 </resources>

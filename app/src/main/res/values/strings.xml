@@ -8,13 +8,24 @@
     <string name="Pleaseselect">Please select your purpose</string>
     <string name="Name">Name :</string>
     <string name="name">Name</string>
+    <string name="Contactnumber">Contact number</string>
+    <string name="Selectgender">Select gender</string>
     <string name="Email">Email ID</string>
+    <string name="email">Email </string>
+    <string name="Alreadyanuser">Already an user ?</string>
+    <string name="Pleaselogin">Please login from here.</string>
     <string name="Selectstate">Select state</string>
+    <string name="Selectservice">Select your service area</string>
     <string name="Selectcity">Select city</string>
-    <string name="Enteraddress">Enter your address</string>
+
     <string name="EnterPIN">Enter PIN</string>
+    <string name="EnterPincode">Enter Pincode</string>
     <string name="DOB">Date of Birth</string>
     <string name="Gender">Gender</string>
+    <string name="SelectState">SELECT STATE</string>
+    <string name="SelectCity">SELECT CITY</string>
+    <string name="SelectService">SELECT SERVICE AREA</string>
+
     <string name="Uploadyourrequirement">Upload your requirement (Image/PDF)</string>
     <string name="BrowseImagePDF">Browse Image/PDF</string>
     <string name="Upload">Upload</string>
@@ -22,10 +33,18 @@
     <string name="SERVICEUSER">SERVICE USER</string>
     <string name="SERVICEPROVIDER">SERVICE PROVIDER</string>
     <string name="Next">Next</string>
+    <string name="Login">Login</string>
+    <string name="login">login</string>
     <string name="pick_file">Pick file</string>
     <string name="Contact">Contact Number :</string>
     <string name="Address">Address :</string>
     <string name="Note">Note</string>
+    <string name="Enteraddress">Enter address</string>
+    <string name="Notes">Note : </string>
+    <string name="Pleaseapply"> Please apply here by filling the below form.
+    </string>
+    <string name="ourteam">our team will get back to you with in 24 hours.</string>
+    <string name="enteramount">Please enter your amount</string>
     <string name="Sqft">Sqft. Area</string>
     <string name="Disinfectant">Disinfectant</string>
     <string name="disinfectant">Disinfectant : </string>
@@ -36,6 +55,8 @@
     <string name="CleaningCategory">Cleaning Category : </string>
     <string name="Square">Square Feet : </string>
     <string name="PAYMENTDETAILS">PAYMENT DETAILS</string>
+    <string name="paywallet">Pay from wallet</string>
+    <string name="payonline">Pay online</string>
     <string name="Service">Service Charge</string>
     <string name="Total">Total Amount</string>
     <string name="Congratulation">Congratulation !</string>
@@ -47,6 +68,9 @@
     <string name="Laundry">Laundry</string>
     <string name="PestControl">Pest Control</string>
     <string name="Entermobile">Enter mobile number</string>
+    <string name="Enterpassword">Enter mobile password</string>
+    <string name="Defaultpassword">Default password : 123456</string>
+   <string name="Additional">Additional info</string>
     <string name="BHIM">BHIM UPI</string>
     <string name="DEBITCARD">DEBIT CARD</string>
     <string name="Verifyingmobile">Verifying mobile number</string>
@@ -62,5 +86,8 @@
     <string name="cleaning_name">Lorem ipsum is simply dummy text of the printing and typesetting
         industry.Lorem ipsum has been the industry standard dummy textever since the 1500s,when an unknown
         printer took a galley of type and scrambled it to make a type specimen book.</string>
-
+    <string name="Chooseimagefrom">Choose image from</string>
+    <string name="Selectgallery">Select photo from gallery</string>
+    <string name="Capturecamera">Capture photo from camera</string>
+    <string name="UploadPDF">Upload PDF</string>
 </resources>
